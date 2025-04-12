@@ -17,21 +17,6 @@ for _, mod in pairs(Modding.GetActivatedMods()) do
 		break
 	end
 end
-
-function ScarletEW(iPlayerID, iUnitID)
-	if  isSPEx 
-	and Players[ iPlayerID ] and Players[ iPlayerID ]:IsAlive()
-	and Players[iPlayerID ]:GetUnitByID( iUnitID )
-	and not Players[ iPlayerID ]:GetUnitByID( iUnitID ):IsDead()
-	and not Players[ iPlayerID ]:GetUnitByID( iUnitID ):IsDelayedDeath()
-	and Players[ iPlayerID ]:GetUnitByID( iUnitID ):IsHasPromotion(ScarletEWID)
-	then
-		-- 万古长战：若安装世界强权模组，则装甲单位晋升替换为重型机甲晋升
-		Players[ iPlayerID ]:GetUnitByID( iUnitID ):SetHasPromotion(GameInfo.UnitPromotions["PROMOTION_TANK_COMBAT"].ID, false);
-		Players[ iPlayerID ]:GetUnitByID( iUnitID ):SetHasPromotion(GameInfo.UnitPromotions["PROMOTION_HEAVY_ROBORT"].ID, true);
-	end
-end
---Events.SerialEventUnitCreated.Add( ScarletEW );
 ----------------------------------------------------------------------------------------------------------------------------
 function GetCloseCity ( iPlayer, plot )
 	local pPlayer = Players[iPlayer]
@@ -129,8 +114,6 @@ function ScarletCombatJoined(iPlayer, iUnitOrCity, iRole, bIsCity)
 			local unitEXP   = attUnit:GetExperience();
 			local attMoves = attUnit:GetMoves();
 			print("attacking Unit remains moves:"..attMoves);
-		
-			tCaptureSPUnits = {unitClassType, unitPlot, g_DoScarletCombat.attPlayerID, unitOriginalOwner, sCaptUnitName, unitLevel, unitEXP, attMoves};
 		end
 	end
 end
@@ -261,7 +244,6 @@ function ScarletCombatEffect()
 						if     SplashDamageFinal >= pUnit:GetCurrHitPoints() then
 							SplashDamageFinal = pUnit:GetCurrHitPoints();
 							local eUnitType = pUnit:GetUnitType();
-							UnitDeathCounter(attPlayerID, pUnit:GetOwner(), eUnitType);
 								
 							if     defPlayerID == Game.GetActivePlayer() then
 								text = Locale.ConvertTextKey("TXT_KEY_SP_NOTIFICATION_SPLASH_DAMAGE_DEATH", attUnitName, defUnitName);
@@ -325,65 +307,6 @@ function ScarletCombatEffect()
 		end
 	end
 
-	---------------------狂澜障岳：魔晶动能炮同格穿透攻击
-	if defUnit then
-	    if attUnit:IsHasPromotion(ScarletVBGID) and batPlot:GetNumUnits() > 1 then
-			local unitCount = batPlot:GetNumUnits()
-			for i = 0, unitCount - 1, 1 do
-				local pFoundUnit = batPlot:GetUnit(i)
-				if (pFoundUnit and pFoundUnit ~= defUnit and pFoundUnit:GetDomainType() ~= DomainTypes.DOMAIN_AIR) then
-					local pPlayer = Players[pFoundUnit:GetOwner()]
-					if PlayersAtWar(attPlayer,pPlayer) then
-						local CollDamageOri = 0;
-						if batType == GameInfoTypes["BATTLETYPE_MELEE"] then
-							local attUnitStrength = attUnit:GetMaxAttackStrength(attPlot, defPlot, defUnit);
-							print ("attUnitStrength:" .. attUnitStrength);
-							local pFoundUnitStrength = pFoundUnit:GetMaxDefenseStrength(batPlot, attUnit);
-							print ("pFoundUnitStrength:" .. pFoundUnitStrength);
-							CollDamageOri = attUnit:GetCombatDamage(attUnitStrength, pFoundUnitStrength, attFinalUnitDamage, false, false, false);
-						else
-							CollDamageOri = attUnit:GetRangeCombatDamage(pFoundUnit,nil,false);
-						end
-						print ("CollDamageOri:" .. CollDamageOri);
-						
-						if attUnit:IsHasPromotion(ScarletCollDamageID) then
-							CollDmgMod = 1.00
-						end
-						
-						local text = nil;
-						local attUnitName = attUnit:GetName();
-						local defUnitName = pFoundUnit:GetName();
-						
-						print ("CollDmgMod:"..CollDmgMod)
-						local CollDamageFinal = math.floor(CollDamageOri * CollDmgMod);
-						if     CollDamageFinal >= pFoundUnit:GetCurrHitPoints() then
-							CollDamageFinal = pFoundUnit:GetCurrHitPoints();
-							local eUnitType = pFoundUnit:GetUnitType();
-							UnitDeathCounter(attPlayerID, pFoundUnit:GetOwner(), eUnitType);
-							
-							if     defPlayerID == Game.GetActivePlayer() then
-								text = Locale.ConvertTextKey("TXT_KEY_SP_NOTIFICATION_COLL_DAMAGE_DEATH", attUnitName, defUnitName);
-							elseif attPlayerID == Game.GetActivePlayer() then
-								text = Locale.ConvertTextKey("TXT_KEY_SP_NOTIFICATION_COLL_DAMAGE_ENEMY_DEATH", attUnitName, defUnitName);
-							end
-						elseif CollDamageFinal > 0 then
-							if     defPlayerID == Game.GetActivePlayer() then
-								text = Locale.ConvertTextKey("TXT_KEY_SP_NOTIFICATION_COLL_DAMAGE", attUnitName, defUnitName, CollDamageFinal);
-							elseif attPlayerID == Game.GetActivePlayer() then
-								text = Locale.ConvertTextKey("TXT_KEY_SP_NOTIFICATION_COLL_DAMAGE_ENEMY", attUnitName, defUnitName, CollDamageFinal);
-							end
-						end
-						if text then
-							Events.GameplayAlertMessage( text );
-						end
-						pFoundUnit:ChangeDamage(CollDamageFinal,attPlayer)
-						print("Collateral Damage="..CollDamageFinal)
-					end
-				end
-			end
-		end
-	end
-	
 	---------------------真红狂月：杀敌为最近城市提供产能
 	if not bIsCity and not attUnit:IsDead() and defUnit:IsDead() and
 	attPlayer:GetCivilizationType() == GameInfoTypes["CIVILIZATION_SCARLET"] then
@@ -420,80 +343,6 @@ function ScarletCombatEffect()
 
 end
 GameEvents.BattleFinished.Add(ScarletCombatEffect)
-
-
--- Unit death cause population loss -- MOD by CaptainCWB
-function UnitDeathCounter(iKerPlayer, iKeePlayer, eUnitType)
-	if (PreGame.GetGameOption("GAMEOPTION_SP_CASUALTIES") == 0) then
-		print("War Casualties - OFF!");
-		return;
-	end
-	
-	if Players[iKeePlayer] == nil or not Players[iKeePlayer]:IsAlive() or Players[iKeePlayer]:GetCapitalCity() == nil
-	or Players[iKeePlayer]:IsMinorCiv() or Players[iKeePlayer]:IsBarbarian()
-	or GameInfo.Units[eUnitType] == nil
-	-- UnCombat units do not count
-	or(GameInfo.Units[eUnitType].Combat == 0 and GameInfo.Units[eUnitType].RangedCombat == 0)
-	then
-		return;
-	end
-	
-	local defPlayer = Players[iKeePlayer];
-	local iCasualty = defPlayer:GetCapitalCity():GetNumBuilding(GameInfoTypes["BUILDING_WAR_CASUALTIES"]);
-	local sUnitType = GameInfo.Units[eUnitType].Type;
-	local iDCounter = 6;
-	
-	if     GameInfo.Unit_FreePromotions{ UnitType = sUnitType, PromotionType = "PROMOTION_NO_CASUALTIES" }() then
-		print ("This unit won't cause Casualties!");
-		return;
-	elseif GameInfo.Unit_FreePromotions{ UnitType = sUnitType, PromotionType = "PROMOTION_HALF_CASUALTIES" }() then
-		iDCounter = iDCounter/2;
-	end
-	if defPlayer:HasPolicy(GameInfo.Policies["POLICY_CENTRALISATION"].ID) then
-		iDCounter = 2*iDCounter/3;
-	end
-	
-	print ("DeathCounter(Max-12): ".. iCasualty .. " + " .. iDCounter);
-	if iCasualty + iDCounter < 12 then
-		defPlayer:GetCapitalCity():SetNumRealBuilding(GameInfoTypes["BUILDING_WAR_CASUALTIES"], iCasualty + iDCounter);
-	else
-		defPlayer:GetCapitalCity():SetNumRealBuilding(GameInfoTypes["BUILDING_WAR_CASUALTIES"], 0);
-		local PlayerCitiesCount = defPlayer:GetNumCities();
-		if PlayerCitiesCount <= 0 then ---- In case of 0 city error
-			return;
-		end
-		local apCities = {};
-		local iCounter = 0;
-		
-		for pCity in defPlayer:Cities() do
-			local cityPop = pCity:GetPopulation();
-			if ( cityPop > 1 and defPlayer:IsHuman() ) or cityPop > 5 then
-				apCities[iCounter] = pCity
-				iCounter = iCounter + 1
-			end
-		end
-		
-		if (iCounter > 0) then
-			local iRandChoice = Game.Rand(iCounter, "Choosing random city")
-			local targetCity = apCities[iRandChoice]
-			local Cityname = targetCity:GetName()
-			local iX = targetCity:GetX();
-			local iY = targetCity:GetY();
-			
-			if targetCity:GetPopulation() > 1 then
-				targetCity:ChangePopulation(-1, true)
-				print ("population lost!"..Cityname)
-			else 
-				return;
-			end
-			if defPlayer:IsHuman() then
-				local text = Locale.ConvertTextKey("TXT_KEY_SP_NOTE_POPULATION_LOSS",targetCity:GetName())
-				local heading = Locale.ConvertTextKey("TXT_KEY_SP_NOTE_POPULATION_LOSS_SHORT")
-				defPlayer:AddNotification(NotificationTypes.NOTIFICATION_STARVING, text, heading, iX, iY)
-			end
-		end
-	end
-end
 
 ----------------------------------------------------------------------------------------------------------------------------
 -- 血盟古堡：城市防御、城市生命加成以及健康加成
@@ -534,23 +383,13 @@ end
 ----------------------------------------------------------------------------------------------------------------------------
 local ScarletCivilizationID  = GameInfoTypes.CIVILIZATION_SCARLET
 function OnClanCastleCreated(iPlayer, iUnit, iX, iY, iBuild)
-	if iBuild ~= nil then
-	local Player = Players[iPlayer]
-	local Plot = Map.GetPlot(iX, iY) 
-		if Player:GetCivilizationType() == ScarletCivilizationID then
-			if iBuild == GameInfoTypes.BUILD_SCARLET_CASTLE then
-				local sUnitType = GetCivSpecificUnit(Player, "UNITCLASS_SWORDSMAN")
-				local sUpgradeUnitType = GetUpgradeUnit(Player, sUnitType)
-				
-				while (sUpgradeUnitType ~= nil) do
-					sUnitType = sUpgradeUnitType
-					sUpgradeUnitType = GetUpgradeUnit(Player, sUnitType)
-				end
-				
-				pUnit = Player:InitUnit(GameInfoTypes[sUnitType], iX, iY)
-				pUnit:ChangeExperience(15)
-        	end
-    	end
+	if iBuild == nil then return end
+	local pPlayer = Players[iPlayer]
+	if pPlayer:GetCivilizationType() ~= ScarletCivilizationID then return end
+
+	if iBuild == GameInfoTypes.BUILD_SCARLET_CASTLE then
+		local pUnit = pPlayer:InitUnit(pPlayer:GetCivUnitNowTech(GameInfoTypes.UNITCLASS_SWORDSMAN), iX, iY)
+		pUnit:ChangeExperience(15)
 	end
 end
 GameEvents.PlayerBuilt.Add(OnClanCastleCreated)
@@ -584,12 +423,12 @@ function ScarletPolicies(playerID)
 		return
 	end
 	
-	if player:CountNumBuildings(GameInfoTypes["BUILDING_RED_MAGICIAN"]) > 0 and 
-	not player:HasPolicy(GameInfo.Policies["POLICY_RED_MAGICIAN"].ID) 
+	if player:CountNumBuildings(GameInfoTypes["BUILDING_RED_MAGICIAN"]) > 0 
+	and player:GetGoldenAgeTurns() > 0
 	then 
-		player:SetNumFreePolicies(1)
-		player:SetNumFreePolicies(0)
-		player:SetHasPolicy(GameInfo.Policies["POLICY_RED_MAGICIAN"].ID,true)	 
+		player:SetHasPolicy(GameInfoTypes["POLICY_RED_MAGICIAN"], true, true)
+	else
+		player:SetHasPolicy(GameInfoTypes["POLICY_RED_MAGICIAN"], false)
 	end
 	
 end
