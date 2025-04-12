@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<!--Civ: Scarlet Estate-->
+		<Row Tag="TXT_KEY_CIV_SCARLET_DESC">
+			<Text>[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_SCARLET_SHORT_DESC">
+			<Text>[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_SCARLET_ADJECTIVE">
+			<Text>[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_SCARLET_DAWN_TEXT">
+			<Text>贵安，尊敬的凡佩尼亚之主，永远鲜红的真月。您的臣民歌颂您不朽的统治，您的威严不容任何人冒犯。[NEWLINE]您是斯卡雷尼亚的至高主宰，这座伟城莅临于新大陆。从阿凡尼到天洲，每位访客都被它的宏伟壮丽以及辉煌所震撼。您有无数强大而忠诚的臣民，在您的领导下，必将屹立于世界之巅。[NEWLINE]哦，真红之月，您会让帝国再现辉煌吗？或是将红色蔓延于整个世界？并在殷绯大纛下号令众生？您能再次建立一个经得住时间考验的永恒国度吗？</Text>
+		</Row>
+		<!--Civ: Scarlet Estate - Pedia-->
+		<Row Tag="TXT_KEY_CIV5_SCARLET_HEADING_1">
+			<Text>帝国历史</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_SCARLET_TEXT_1">
+			<Text>[COLOR_POSITIVE_TEXT]以下历史出自我的跑团世界观[ENDCOLOR]
+			[NEWLINE]奥古斯都大灭绝是西方世界除天庭坠狱时期最为沉重的灾难，在世界引擎爆炸下，曾经繁荣的凯撒尼亚共和国分崩离析，而麾下的领土也被分裂为各个国家。
+			[NEWLINE]滥用魔能是导致一系列灾难的开端，残存的执政官在中央彻底覆灭后纷纷独立建国，成为彻底的混乱时期。而充盈着魔能的共和国中央区域，残存的古盖亚人则在侵蚀下痛苦的生存着。
+			[NEWLINE]幸存的古盖亚人分为两个派系：
+			[NEWLINE]塔纳托斯——古盖亚语中喻义深渊使者，也是那批守旧派，为了生存与执着于恢复共和国的辉煌，选择了禁忌的转化，变为魔能适应体质，播撒腐蚀。
+			[NEWLINE]涅法托斯——古盖亚语中喻义负誓使者，属于改革派，曾一度反对魔能的滥用，同样为了生存与追寻未知的出路，但是选择纯洁拒绝堕落，并提出改良魔能。
+			[NEWLINE]双方对于未来的选择自然无法共存，如今塔纳托斯帝国的存在，宣告了最终的胜利者。
+			[NEWLINE]失败的涅法托斯若没有外力的帮助，必然只会走向灭亡，但灾难亦是升格的契机，在造物主的干预下，涅法托斯在魔能与模因裁剪结合下成为了新的种族——血族。
+			[NEWLINE]奥古斯都大灭绝使得西方世界在很长一段时间对于魔能而言谈虎色变，曾经掌握魔能的盖亚人却成为过街老鼠，源于共和国的社会结构，被当做“下等人”的泰拉人却在这场灾难下得以幸存，“奴隶”反抗“奴隶主”，曾经的苦果终得轮回。
+			[NEWLINE]位于西方世界西南方向的黎宁海岸，由血族以及盖亚孑遗组建了新的国度——绯血联邦，虽然能够生存，但是长年的战争以及领地及资源的匮乏不得不寻找出路，这也是未来凡佩尼亚大陆被血族优先开拓的原因，为了生存不得不靠航海寻找出路。
+			[NEWLINE]自盖亚孑遗升格为血族后，最初的转化对象被称为初诞者，也是各大氏族的“血承原体”。
+			[NEWLINE]“至尊王血”——斯卡雷特血族：全方位发展的顶级血承，继承了涅法托斯初诞领袖涅法雷姆·斯卡雷特的意志，所有血族的领导者。斯卡雷特对于血系法术有着天生的优势，另外斯卡雷特血族的纯正血承都拥有可飞行的翅膀，这是其他血承所没有的优势。
+			[NEWLINE]而少数斯卡雷特血承会获得被称为破灭之翼的隐藏血承，丧失飞行能力，但是其翼爪可作为强大的天生武器所使用。[NEWLINE]
+			[NEWLINE]“暗影之王”——德克雷亚血族：以迅捷著称的优秀血承，继承了涅法托斯初诞领袖德拉科拉·德克雷亚的意志，血族中的夜之眼。德克雷亚对于影系法术以及精神能力有着天生的优势，同时也是天生的刺客、谍报专家、伪装大师，整个开元世界都有着德克雷亚的耳目。
+			[NEWLINE]和偏见印象不同的是，德克雷亚并非想象中的沉默寡言隐匿在暗处的神秘人形象，反而长袖善舞，擅长挖掘对方内心的想法，卓越的德克雷亚成员往往受身边人的爱戴。[NEWLINE]
+			[NEWLINE]“元素魔主”——采佩什血族：以魔武双修著名的优秀血承，继承了涅法托斯初诞领袖克劳奇·采佩什的意志，绯赤魔导学会的建立者。采佩什对于元素系法术有着与生俱来的特权，几乎所有采佩什血族都能在成年后觉醒魔力并且资质不会太差，还拥有强大的逻辑思维。
+			[NEWLINE]采佩什血族往往都能成为睿智学者，对脑域的开发使得他们往往能一心二用乃至多用，因此搭配魔晶技术能够比较安全的施展融合法术。[NEWLINE]
+			[NEWLINE]“狂性猎手”——堕血血族：以超凡的肉体力量引以为豪的优秀血承，继承了涅法托斯初诞领袖奈克乌斯·堕血的意志，血族中最勇猛的战士。堕血音译布拉德弗伦，这些曾经距离世界引擎最近的血族受到了魔能更为彻底的侵蚀，也因祸得福获得了使用魔能的体质。
+			[NEWLINE]但血族对于滥用魔能是极端痛恨，因此堕血血族的血耆长者们将此视为血承之秘，即便是德克雷亚也不会轻易的去打听堕血的小秘密。堕血擅长释放内心的野性，任何一名堕血血族都能释放这股力量而化身血猎者形态，但同时为了驾驭这股力量，堕血氏族对于心性的修练是极为严格的。[NEWLINE]
+			[NEWLINE]“卓越冠军”——血龙血族：以一骑当千而闻名于世的顶级血承，继承了涅法托斯初诞领袖赫克托·血龙的意志，不负赤帝之血！血龙并非传统的氏族结社，任何血族乃至部分外族都有在经过重重死亡考验后加入血龙的资格，正因如此，血龙血族往往听其闻而不见其踪。
+			[NEWLINE]每一名遵从血龙戒律的血龙血族都是孤高的冠军，因此很难见到血龙们集体行动，但完成了血龙的至高荣誉，亲手击杀一头顶尖生物并沐浴对方的鲜血，获得了血龙堡主职位的至强者，便有了召集其他血龙乃至组建自己的血龙骑团的权力。[NEWLINE]</Text>
+		</Row>
+		
+		<!--Leader: Remilia Scarlet-->
+		<Row Tag="TXT_KEY_LEADER_REMILIA">
+			<Text>[COLOR_NEGATIVE_TEXT]蕾米莉亚·斯卡雷特[ENDCOLOR]</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<!--Leader: Remilia Scarlet - Pedia-->
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_REMILIA_NAME">
+			<Text>[COLOR_NEGATIVE_TEXT]蕾米莉亚·斯卡雷特[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_REMILIA_SUBTITLE">
+			<Text>[COLOR_NEGATIVE_TEXT]永远鲜红的真月[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_REMILIA_TITLES_1">
+			<Text>[COLOR_NEGATIVE_TEXT]红皇帝[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_REMILIA_TITLES_2">
+			<Text>[COLOR_NEGATIVE_TEXT]凡佩尼亚之主[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_REMILIA_LIVED">
+			<Text>???-至今</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_REMILIA_HEADING_1">
+			<Text>领袖简介</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_REMILIA_TEXT_1">
+			<Text>蕾米莉亚并不是与人类打交道的第一位血族，但在她崛起之前，所谓血族都不过是些避世隐居的吸血生物而已。虽然此前有些血族也获得了小片领地与小股军队，但正是在蕾米莉亚获得了整个罗马尼亚的统治权，并合法地获得了『公爵』头衔之后，整个血族一族才真正掀开了新的纪元。在她抵达这片诅咒的土地二百年后，终于露出了野心——她想成为皇帝并建立斯卡雷特帝国！无论如何，这股野心也就成为了家族血脉中的遗传因子，毕竟牧人本来就该统治牛群！</Text>
+		</Row>
+	
+		<!--UA/UAB/UAP: 红魔觉醒の日/真红の狂月-->
+		<Row Tag="TXT_KEY_TRAIT_SCARLET_ADVENT">
+			<Text>[ICON_BULLET]新建城市获得6块额外[ICON_SGM_GROUP_ACT_OFF]领土，全地形+1[ICON_PRODUCTION]产能；限定[COLOR_MAGENTA]传统政策[ENDCOLOR]，开启新[ICON_CULTURE]政策树可建造独有的[COLOR_POSITIVE_TEXT]专属[ENDCOLOR]奇观。[NEWLINE]
+			[ICON_BULLET][ICON_PROMOTION_CQB_COMBAT_1][COLOR_POSITIVE_TEXT]近战陆军[ENDCOLOR]获得[COLOR_POSITIVE_TEXT]独有[ENDCOLOR]晋升[COLOR_NEGATIVE_TEXT]寂庭血宴[ENDCOLOR]；[COLOR_POSITIVE_TEXT]作战单位[ENDCOLOR]+15[ICON_WAR]初始经验，并在[ICON_PIRATE]歼灭敌军时为最近的[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]提供等同对方[ICON_STRENGTH]战斗力的[ICON_PRODUCTION]产能。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_SCARLET_ADVENT_SHORT">
+			<Text>[COLOR_NEGATIVE_TEXT]红魔觉醒/真红狂月[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CRIMSON_MOON">
+			<Text>[COLOR_NEGATIVE_TEXT]真红狂月[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CRIMSON_MOON_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]作战单位[ENDCOLOR]+15[ICON_WAR]初始经验，并在[ICON_PIRATE]歼灭敌军时为最近的[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]提供等同对方[ICON_STRENGTH]战斗力的[ICON_PRODUCTION]产能。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SCARLET_RAGE">
+			<Text>[COLOR_NEGATIVE_TEXT]寂庭血宴[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SCARLET_RAGE_HELP">
+			<Text>攻击可根据造成的[COLOR_POSITIVE_TEXT]伤害[ENDCOLOR]恢复等量[ICON_HP]生命（最高不超过[COLOR_NEGATIVE_TEXT]15[ENDCOLOR]）。</Text>
+		</Row>
+		<!--UNW：红色不夜城-->
+		<Row Tag="TXT_KEY_BUILDING_Red_Night_Castle">
+			<Text>[COLOR_NEGATIVE_TEXT]红色不夜城[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_RED_NIGHT_CASTLE">
+			<Text>永恒盛世</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_Red_Night_Castle_HELP">
+			<Text>标示该[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]是文明的[ICON_CAPITAL]首都，拥有三个[ICON_GREAT_WORK]美术杰作展位，用[ICON_SGM_GROUP_OFF]道路将其他城市[ICON_CONNECTED]连接到[ICON_CAPITAL]首都将获得额外的[ICON_GOLD]金钱。[NEWLINE]
+			[NEWLINE][ICON_BULLET]提供额外的[ICON_STRENGTH]城市防御，以及各30单位的[ICON_RES_CONSUMER]商品、[ICON_RES_ELECTRICITY]电力、[ICON_RES_MANPOWER]人力。
+			[NEWLINE][ICON_BULLET]开启[COLOR_MAGENTA]传统政策[ENDCOLOR]使[ICON_CAPITAL]首都地块额外+3[ICON_FOOD]食物、[ICON_PRODUCTION]产能、[ICON_GOLDEN_AGE]黄金时代点数。
+			[NEWLINE][ICON_BULLET]每进入一个新时代，开启一次[ICON_GOLDEN_AGE]黄金时代，持续10回合（标准速度下）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_Red_Night_Castle_PEDIA">
+			<Text>宏伟的红色不夜城--斯卡雷尼亚骄傲而气派地矗立于赤血丰碑丘陵上，来到这座千年古都的旅客们无不发出惊叹。[NEWLINE]比起宫殿而言额外获得信仰加成以及更高的城防，并提供三个美术杰作席位。提供更多的人力以及消费品，还额外提供电力。在进入新时代时开启一次黄金时代，同时传统政策提供更多加成。</Text>
+		</Row>
+		
+		<!--UW：殷月红魔殿-->
+		<Row Tag="TXT_KEY_BUILDING_SCARLET_PALACE">
+			<Text>[COLOR_NEGATIVE_TEXT]殷月红魔殿[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCARLET_PALACE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]殷月红魔殿[ENDCOLOR]是[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的专属政策奇观，[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]必须为[ICON_CAPITAL]首都并开启[COLOR_MAGENTA]传统政策[ENDCOLOR]树。[NEWLINE]
+			[NEWLINE][ICON_BULLET]使[COLOR_NEGATIVE_TEXT]红色不夜城[ENDCOLOR]进入新时代开启的[ICON_GOLDEN_AGE]黄金时代持续时间[COLOR_POSITIVE_TEXT]翻倍[ENDCOLOR]。
+			[NEWLINE][ICON_BULLET][ICON_PUPPET][COLOR_GREY]傀儡城市[ENDCOLOR]+4[ICON_RES_MANPOWER]人力，[ICON_CITYBANNER_CITY_LV1][ICON_CITYBANNER_CITY_LV2][ICON_CITYBANNER_CITY_LV3][ICON_CITYBANNER_CITY_LV4][ICON_CITYBANNER_CITY_LV5]直辖城市因管理效率带来的政策[ICON_CULTURE]文化阈值增长[COLOR_POSITIVE_TEXT]-5%[ENDCOLOR]。
+			[NEWLINE][ICON_BULLET]在其[ICON_GREAT_WORK]杰作展位中已收藏有一件世界名作《[COLOR_NEGATIVE_TEXT]永远鲜红的真月[ENDCOLOR]》，完成[COLOR_MAGENTA]传统政策[ENDCOLOR]额外+15%[ICON_FOOD]食物、[ICON_GOLD]金钱产出。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_SCARLET_PALACE_QUOTE">
+			<Text>[NEWLINE]“首祸曰逆，惘从曰叛。”[NEWLINE]“思邪至逆，逆邪至惩。”[NEWLINE]“智识力也，戒之以谨。”[NEWLINE]        ——殷绯箴言[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCARLET_PALACE_PEDIA">
+			<Text>这里是永恒帝王的皇宫，斯卡雷特家族运祚长兴不衰。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_WORK_REMILIA">
+			<Text>[COLOR_NEGATIVE_TEXT]永远鲜红的真月[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCARLET_PALACE_BOUNS">
+			<Text>绯月恩典</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCARLET_PALACE_BOUNS_HELP">
+			<Text>完成[COLOR_MAGENTA]传统政策[ENDCOLOR]使本城额外+15%[ICON_FOOD]食物、[ICON_GOLD]金钱产出。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCARLET_PALACE_CULTURE">
+			<Text>血盟结社</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCARLET_PALACE_CULTURE_HELP">
+			<Text>因管理效率带来的政策[ICON_CULTURE]文化阈值增长[COLOR_POSITIVE_TEXT]-5%[ENDCOLOR]。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCARLET_PALACE_MANPOWER">
+			<Text>红魔血仆</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCARLET_PALACE_MANPOWER_HELP">
+			<Text>[ICON_PUPPET][COLOR_GREY]傀儡城市[ENDCOLOR]+4[ICON_RES_MANPOWER]人力。</Text>
+		</Row>
+		
+		<!--UW：血龙礼拜堂-->
+		<Row Tag="TXT_KEY_BUILDING_BLOOD_DRAGON_KEEP">
+			<Text>[COLOR_NEGATIVE_TEXT]血龙礼拜堂[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BLOOD_DRAGON_KEEP_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]血龙礼拜堂[ENDCOLOR]是[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的专属政策奇观，建造需开启[COLOR_MAGENTA]荣誉政策[ENDCOLOR]树。[NEWLINE]
+			[NEWLINE][ICON_BULLET][ICON_RES_MANPOWER]人力+25，全国[ICON_WAR]军事建筑-50%[ICON_GOLD]维护费。
+			[NEWLINE][ICON_BULLET]获得一座免费[ICON_WAR]歃血要塞，每座[COLOR_POSITIVE_TEXT]歃血要塞[ENDCOLOR]额外+2[ICON_CULTURE]文化。
+			[NEWLINE][ICON_BULLET]奇观所在城市提拔一名[ICON_GREAT_GENERAL]陆军统帅，并允许在本城组建[COLOR_YIELD_GOLD]赤殇血骑[ENDCOLOR]。
+			[NEWLINE][ICON_BULLET]建有[COLOR_POSITIVE_TEXT]歃血要塞[ENDCOLOR]的[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]所组建的[ICON_PROMOTION_LIGHTNING_WARFARE][COLOR_POSITIVE_TEXT]陆军单位[ENDCOLOR]可获得双倍[ICON_WAR]初始经验。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_BLOOD_DRAGON_KEEP_QUOTE">
+			<Text>[NEWLINE]“吾之利刃，铸其真理。”[NEWLINE]“吾之真理，其名死亡。”[NEWLINE]“吾之追求，超越追求。”[NEWLINE]        ——血龙戒律[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BLOOD_DRAGON_KEEP_PEDIA">
+			<Text>月光沐浴在他的身上，犹如冬雨中倾盆而下的冰水。他模模糊糊地记得，曾经有那么一段时间，黎明中的第一缕阳光也曾让他感到过同样的精神抖擞，但那是很久以前的事了。[NEWLINE][NEWLINE]当他骑着马穿过树林时，他又把这个词在他的舌头上好好回味了一遍……活着。这个词比起开玩笑还糟糕，那是一场残酷的骗局，一场罪恶的诡计，就好像众神和他们那些穿着像花花公子一样衣服的祭司与那些不折手段的律师——把那叫做活着。当然更糟糕的是，把现在这叫做诅咒。[NEWLINE][NEWLINE]当他高高地站在马镫上时，他能感到他的肌肉里有一种力量，这种力量是他从来没有过的，甚至在他迈入成年的那一刻也没有过的。他感受到了凉爽的夜晚，尝到了头发里风的味道，闻到了马肋的气味，还有那即将到来的诱人战斗的气息。他感觉自己比从前任何时候都更有活力。[NEWLINE][NEWLINE]他又想起了曾经有一段时间，他渴望着骑马前去战斗，渴望着在屠杀中迷失自我，渴望着除了眼前的生死搏斗之外，什么也不关心。而现在的他，似乎每时每刻都是这样。即使没有人用武器挑战他，他也能感到无比光荣，即使战争早已结束，马蹄声和战鼓声仍在他的心中回荡。[NEWLINE][NEWLINE]血龙——他们也许会这么叫他，或者是叫他恶魔，叫他被憎恶者，但他已经超越了这些东西。不管活着还是死了，他都是一位骑士。他是一个真正纯粹的战士，有钢之血液和灵魂——如果他曾经有过这样的东西的话，现在他已经确实知道他已经有了——武术之火。他是一把活生生的剑，是战斗的大师，是毁灭和挫败的风暴。[NEWLINE][NEWLINE]在前方还有新的战斗，他骑着马快速向前而去，微笑在他的嘴唇上蔓延，而死亡在他的身后迅速赶来。</Text>
+		</Row>
+		
+		<!--UW：禁忌秘文库-->
+		<Row Tag="TXT_KEY_BUILDING_ARCANE_TABOO_LIBRARY">
+			<Text>[COLOR_NEGATIVE_TEXT]禁忌秘文库[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARCANE_TABOO_LIBRARY_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]禁忌秘文库[ENDCOLOR]是[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的专属政策奇观，建造需开启[COLOR_MAGENTA]理性政策[ENDCOLOR]树。[NEWLINE]
+			[NEWLINE][ICON_BULLET]本城获得已研发科技数量[COLOR_CYAN]÷3[ENDCOLOR]的[ICON_RESEARCH]科研产出。
+			[NEWLINE][ICON_BULLET]每开启一条政策树，全国[COLOR_POSITIVE_TEXT]+5%[ENDCOLOR][ICON_GREAT_PEOPLE]伟人诞生速率。
+			[NEWLINE][ICON_BULLET]提供三个[ICON_GREAT_WORK]文学杰作展位，奇观建成后将开启[ICON_IDEOLOGY_ORDER][ICON_IDEOLOGY_FREEDOM][ICON_IDEOLOGY_AUTOCRACY]意识形态。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_ARCANE_TABOO_LIBRARY_QUOTE">
+			<Text>[NEWLINE]“思久欲知，知繁渴思。”[NEWLINE]“惟精惟一，允执厥中。”[NEWLINE]        ——芙尔比邓恩·诺雷姬[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARCANE_TABOO_LIBRARY_PEDIA">
+			<Text>凡佩尼亚的魔导战巫对他们丰富的卷轴收藏特别引以为豪。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TABOO_LIBRARY_BOUNS">
+			<Text>禁忌典藏</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TABOO_LIBRARY_BOUNS_HELP">
+			<Text>每研发[COLOR_CYAN]3[ENDCOLOR]项科技，[ICON_RESEARCH]科研产出+1。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TABOO_LIBRARY_POLICY">
+			<Text>禁忌秘典</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TABOO_LIBRARY_POLICY_HELP">
+			<Text>每开启一条政策树，全国[COLOR_POSITIVE_TEXT]+5%[ENDCOLOR][ICON_GREAT_PEOPLE]伟人诞生速率。</Text>
+		</Row>
+		
+		<!--UNW：绯赤魔导学会-->
+		<Row Tag="TXT_KEY_BUILDING_RED_MAGICIAN">
+			<Text>[COLOR_NEGATIVE_TEXT]绯赤魔导学会[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RED_MAGICIAN_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]绯赤魔导学会[ENDCOLOR]是[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的特色国家奇观，替代[COLOR_POSITIVE_TEXT]国立研究院[ENDCOLOR]，必须建造于[ICON_CAPITAL]首都。[NEWLINE]
+			[NEWLINE][ICON_BULLET]进入[ICON_GOLDEN_AGE]黄金时代使[ICON_GREAT_SCIENTIST]大科学家、[ICON_GREAT_ENGINEER]大工程师、[ICON_GREAT_WRITER]大文学家的诞生速率+33%。
+			[NEWLINE][ICON_BULLET]每位[ICON_GREAT_SCIENTIST][COLOR_CYAN]科学家[ENDCOLOR]+1[ICON_PRODUCTION]产能、[ICON_CULTURE]文化。
+			[NEWLINE][ICON_BULLET]每位[ICON_GREAT_ENGINEER][COLOR_YIELD_FOOD]工程师[ENDCOLOR]+1[ICON_RESEARCH]科研、[ICON_CULTURE]文化。
+			[NEWLINE][ICON_BULLET]每位[ICON_GREAT_WRITER][COLOR_MAGENTA]文学家[ENDCOLOR]+1[ICON_PRODUCTION]产能、[ICON_RESEARCH]科研。
+			[NEWLINE][ICON_BULLET]每当文明诞生任意一名[ICON_GREAT_SCIENTIST]大科学家/[ICON_GREAT_ENGINEER]大工程师/[ICON_GREAT_WRITER]大文学家时，本城为其他两种类型的伟人+30[ICON_GREAT_PEOPLE]诞生进度（标准速度下）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RED_MAGICIAN_PEDIA">
+			<Text>许多遭受迫害的法师、技师、学者流离至凡佩尼亚大陆时，在斯卡雷特的庇护以及统合下组建了学识议会--绯赤魔导学会的前身。和毫无包容心的教廷不同，血族对于这群思想超前的博学家给予了高度的肯定，并进行了多次学术议题间的讨论。在斯卡雷特帝国建立后，部分精英被纳入绯赤魔导学会的核心，成为其国家魔导力量的中流砥柱。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_RED_MAGICIAN">
+			<Text>学识议会</Text>
+		</Row>
+
+		<!--UB：血契秘所-->
+		<Row Tag="TXT_KEY_BUILDING_Vampire_Mansion">
+			<Text>[ICON_GREAT_SCIENTIST][ICON_STRENGTH]血契秘所</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_Vampire_Mansion_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]血契秘所[ENDCOLOR]是[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的特色建筑，替代[COLOR_POSITIVE_TEXT]图书馆[ENDCOLOR]，建造不受[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]规模限制。[NEWLINE]
+			[NEWLINE][ICON_BULLET]每2[ICON_CITIZEN]人口+1[ICON_RESEARCH]科研，免除[ICON_CITIZEN]人口与该建筑产生的[ICON_GOLD]维护费。
+			[NEWLINE][ICON_BULLET]拥有等同[ICON_STRENGTH]城墙的防御能力，但比起[COLOR_POSITIVE_TEXT]图书馆[ENDCOLOR]而言建造成本更高（60[ICON_PRODUCTION]产能）。
+			[NEWLINE][ICON_BULLET]每座[COLOR_POSITIVE_TEXT]血契秘所[ENDCOLOR]可降低全国因[ICON_CITIZEN]人口产生的[COLOR_POSITIVE_TEXT]1%[ENDCOLOR][ICON_HAPPINESS_4]不满。
+			[NEWLINE][ICON_BULLET][COLOR_WHITE]模组联动[ENDCOLOR]：当加载[COLOR_YIELD_GOLD]世界强权[ENDCOLOR]模组时，该建筑额外[COLOR_POSITIVE_TEXT]+1%[ENDCOLOR][ICON_HEALTH]全局健康。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_Vampire_Mansion_PEDIA">
+			<Text>血族与法师合作在斯卡雷特帝国是很古老的传统，因此有座城堡图书馆是一名血族展现自己人脉与财力的象征。[NEWLINE]比起图书馆而言可额外获得产能与科研并降低人口的不满，虽然需要消耗更多的产能建造，但是拥有相当于城墙级别的防护。</Text>
+		</Row>
+		<!--UB：歃血要塞-->
+		<Row Tag="TXT_KEY_BUILDING_Blood_Fortress">
+			<Text>[ICON_WAR]歃血要塞</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_Blood_Fortress_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]歃血要塞[ENDCOLOR]是[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的特色建筑，替代[COLOR_POSITIVE_TEXT]城堡[ENDCOLOR]，该建筑不会[COLOR_NEGATIVE_TEXT]过时[ENDCOLOR]。[NEWLINE]
+			[NEWLINE][ICON_BULLET][ICON_RES_MANPOWER]人力+5，无需[COLOR_POSITIVE_TEXT]码头[ENDCOLOR]和[COLOR_POSITIVE_TEXT]军械库[ENDCOLOR]即可组建[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的特色单位。
+			[NEWLINE][ICON_BULLET]本城相邻3格区域内的每名[COLOR_POSITIVE_TEXT]作战单位[ENDCOLOR]提供等同时代等级的[ICON_PRODUCTION]产能（标准速度下）。
+			[NEWLINE][ICON_BULLET]本城组建的[ICON_PROMOTION_KNIGHT_COMBAT][COLOR_POSITIVE_TEXT]重装骑兵[ENDCOLOR]或[ICON_PROMOTION_TANK_COMBAT][COLOR_POSITIVE_TEXT]装甲单位[ENDCOLOR]获得[COLOR_NEGATIVE_TEXT]血堡战旗[ENDCOLOR]晋升。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]血堡战旗[ENDCOLOR]：[ICON_MOVES]移动力+1、[ICON_STRENGTH]远程防御力+25%，遭受[ICON_RANGE_STRENGTH]远程攻击时减少[COLOR_POSITIVE_TEXT]25%[ENDCOLOR]伤害。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_Blood_Fortress_PEDIA">
+			<Text>城堡与要塞遍布整个凡佩尼亚大陆，将其化为密不透风的铜墙铁壁。城堡与要塞的传统来源于斯卡雷特帝国建国前的历史，为了抵御恶兽与圣战军，几乎所有沿海城市都进行了要塞化。虽然在打通内陆后大量人口迁入其中，但这些要塞依然被军队所运营着。[NEWLINE]比起城堡而言可额外获得产能、快乐与人力，并提供更多的城市防御。本城建造骑乘、装甲单位时获得额外产能，当建成时本文明所有骑乘、装甲单位获得特殊晋升。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_Flag_of_Blood_Keep">
+			<Text>[COLOR_NEGATIVE_TEXT]血堡战旗[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_Flag_of_Blood_Keep_HELP">
+			<Text>[ICON_MOVES]移动力+1、[ICON_STRENGTH]远程防御力+25%，遭受[ICON_RANGE_STRENGTH]远程攻击时减少[COLOR_POSITIVE_TEXT]25%[ENDCOLOR]伤害。</Text>
+		</Row>
+		
+		<!--UU：猩红血骑-->
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS">
+			<Text>猩红血骑</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]猩红血骑[ENDCOLOR]是[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的特色单位，替代[COLOR_POSITIVE_TEXT]骑士[ENDCOLOR]，该单位不会[COLOR_NEGATIVE_TEXT]过时[ENDCOLOR]。[NEWLINE]
+			[NEWLINE][ICON_BULLET]这些武艺非凡的战士渴望在战斗中获得荣耀，比起[COLOR_POSITIVE_TEXT]骑士[ENDCOLOR]而言组建成本更低（120[ICON_PRODUCTION]产能）
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]血堡战旗[ENDCOLOR]：[ICON_MOVES]移动力+1、[ICON_STRENGTH]远程防御力+25%，遭受[ICON_RANGE_STRENGTH]远程攻击时减少[COLOR_POSITIVE_TEXT]25%[ENDCOLOR]伤害。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]猎猎扬旌[ENDCOLOR]：当研发[COLOR_CYAN]冶金学[ENDCOLOR]后，战斗力提高（55[ICON_STRENGTH]），[ICON_MOVES]移动力+1（[COLOR_NEGATIVE_TEXT]升级不会继承[ENDCOLOR]）。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]嗜血铁骑[ENDCOLOR]：攻击可对目标造成自身[ICON_STRENGTH]战斗力÷10的[COLOR_POSITIVE_TEXT]额外伤害[ENDCOLOR]，并恢复等量[ICON_HP]生命。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]踏破万军[ENDCOLOR]：自带1级[ICON_PROMOTION_CHARGE_NEW_1]冲锋晋升，[ICON_STRENGTH]战斗力+25%，且[ICON_MOVES]移动不受地形影响。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_TEXT">
+			<Text>猩红血骑是西方世界中最为令人生畏的骑兵。在血族的力量以及超凡神速的帮助下，他们能够轻易的凿穿令人生畏的防线。[NEWLINE][NEWLINE]猩红血骑几乎刀枪不入，在枪林箭雨中也能纵横驰骋。他们将此视为荣誉，无惧于任何强敌，毫无疑问，殷绯帝国的每次战斗中他们都将冲锋在前。甚至有传闻说，即便是传说中的烈日枪骑也无法与猩红血骑正面对决。[NEWLINE][NEWLINE]猩红血骑的标志是龙，纹章饰物也大同小异，他们的盔甲饰有象征死亡与杀戮的图纹。他们手中的刀剑都是铭有符文的魔法武器，饰有贵重金属，造型如同各种凶兽。伴随他们冲锋陷阵的坐骑也并非血肉战马，而是可怖的梦魇兽，它们往往身披重甲，上面绘有恐怖的图案，象征着末日到来。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_Blood_dragon_warrior">
+			<Text>[COLOR_NEGATIVE_TEXT]猩红骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_Blood_dragon_warrior_HELP">
+			<Text>[NEWLINE][ICON_BULLET][ICON_STRENGTH]战斗力+25%，且[ICON_MOVES]移动不受地形影响。[NEWLINE][ICON_BULLET]攻击可对目标造成自身[ICON_STRENGTH]战斗力÷10的[COLOR_POSITIVE_TEXT]额外伤害[ENDCOLOR]，并恢复等量[ICON_HP]生命。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BLOOD_KNIGHTS_RETROFIT">
+			<Text>猎猎扬旌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BLOOD_KNIGHTS_RETROFIT_HELP">
+			<Text>当研发[COLOR_CYAN]冶金学[ENDCOLOR]后，战斗力提高（55[ICON_STRENGTH]），[ICON_MOVES]移动力+1（[COLOR_NEGATIVE_TEXT]升级不会继承[ENDCOLOR]）。</Text>
+		</Row>
+		<!--EU：赤殇骑团-->
+		<Row Tag="TXT_KEY_UNIT_RED_DEATH_KNIGHT">
+			<Text>[COLOR_YIELD_GOLD]赤殇血骑[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_RED_DEATH_KNIGHT_HELP">
+			<Text>[COLOR_YIELD_GOLD]精英血骑士[ENDCOLOR]，攻击可造成范围伤害并让受到波及的敌人无法攻击。需要[COLOR_NEGATIVE_TEXT]血龙礼拜堂[ENDCOLOR]所在城市解锁，仅能组建一队。[NEWLINE]
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]百鏖至胜[ENDCOLOR]：自带1~3级[ICON_PROMOTION_CHARGE_NEW_3]冲锋晋升，[ICON_STRENGTH]战斗力+33%，且[ICON_MOVES]移动不受地形影响。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]惶怖荡武[ENDCOLOR]：攻击可对前方扇形区域造成[COLOR_POSITIVE_TEXT]50%[ENDCOLOR]范围伤害，可与[COLOR_POSITIVE_TEXT]践踏伤害[ENDCOLOR]相互叠加。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]泣血捶膺[ENDCOLOR]：被[COLOR_NEGATIVE_TEXT]惶怖荡武[ENDCOLOR]波及的敌军，在本回合[ICON_MOVES]移动力-50%且丧失[ICON_PROMOTION_COMBAT_REDUCE]攻击能力。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_RED_DEATH_KNIGHT_TEXT">
+			<Text>没有比赤殇骑团更残忍更无情的了，这些骑士是莫德海姆大屠杀的制造者。戈尔吉维赫·克拉克小队在骑士团中战果累累，其盾牌印有克拉克瓦尔德城堡标志。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RED_DEATH_KNIGHTS">
+			<Text>[COLOR_NEGATIVE_TEXT]惶怖荡武[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RED_DEATH_KNIGHTS_HELP">
+			<Text>[NEWLINE][ICON_BULLET][ICON_STRENGTH]战斗力+33%，且[ICON_MOVES]移动不受地形影响。[NEWLINE][ICON_BULLET]攻击可造成[COLOR_POSITIVE_TEXT]范围伤害[ENDCOLOR]，遭受波及单位将陷入[COLOR_POSITIVE_TEXT]泣血捶膺[ENDCOLOR]状态，本回合[ICON_MOVES]移动力-50%且丧失[ICON_PROMOTION_COMBAT_REDUCE]攻击能力。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_RED_DEATH_KNIGHT_NAME0">
+			<Text>[COLOR_NEGATIVE_TEXT]莫德海姆之灾[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_RED_DEATH_KNIGHTS_EFFECT">
+			<Text>[COLOR_NEGATIVE_TEXT]泣血捶膺[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RED_DEATH_KNIGHTS_EFFECT_HELP">
+			<Text>本回合[ICON_MOVES]移动力-50%且丧失[ICON_PROMOTION_COMBAT_REDUCE]攻击能力。</Text>
+		</Row>
+		<!--UU：荣光血翼舰队-->
+		<Row Tag="TXT_KEY_BLOOD_WING_SHIP">
+			<Text>荣光血翼主力舰</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BLOOD_WING_SHIP_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]荣光血翼主力舰[ENDCOLOR]是[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的特色单位，替代[COLOR_POSITIVE_TEXT]风帆主力舰[ENDCOLOR]，该单位不会[COLOR_NEGATIVE_TEXT]过时[ENDCOLOR]。[NEWLINE]
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]狂澜障岳[ENDCOLOR]：解锁[ICON_PROMOTION_BOMBARDMENT_3]魔晶动能炮晋升，遭受来自[ICON_PROMOTION_NAVAL_HIT_AND_RUN][COLOR_POSITIVE_TEXT]游猎海军[ENDCOLOR]或[ICON_PROMOTION_SUBMARINE_COMBAT][COLOR_POSITIVE_TEXT]潜艇单位[ENDCOLOR]攻击时所受伤害[COLOR_POSITIVE_TEXT]减半[ENDCOLOR]。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]狂霄逆浪[ENDCOLOR]：允许[ICON_PROMOTION_CAN_MOVE_AFTER]攻击后移动，当遭受不超过自身2[ICON_PROMOTION_RANGE]射程的[ICON_RANGE_STRENGTH]远程攻击可对攻击者予以一次[COLOR_POSITIVE_TEXT]反击[ENDCOLOR]。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]涤故更新[ENDCOLOR]：当研发[COLOR_CYAN]工业化[ENDCOLOR]后，战斗力提高（280近战[ICON_STRENGTH]，280远程[ICON_RANGE_STRENGTH]），[ICON_PROMOTION_RANGE]射程+1（[COLOR_NEGATIVE_TEXT]升级不会继承[ENDCOLOR]）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BLOOD_WING_SHIP_PEDIA">
+			<Text>凡佩尼亚人民永远无法忘怀第二次“除魔”圣战，悲恸海的海床上埋葬着无数英烈与仇敌。每一名斯卡雷特帝国子民都有着一颗渴望再回蔚蓝的赤子之心。作为海权国家，海军就是国门。即使在一次次围堵与打压中，帝国依然屹立不倒。崭新的血帆凝结着对死敌铭心的仇恨及保家卫国战士们的鲜血，化为荣光血翼舰队，宣告了斯卡雷特帝国的君临回归。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_VENGEFUL_BLOOD_GOD">
+			<Text>[COLOR_NEGATIVE_TEXT]狂霄逆浪[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_VENGEFUL_BLOOD_GOD_HELP">
+			<Text>[NEWLINE][ICON_BULLET]解锁[ICON_PROMOTION_BOMBARDMENT_3]魔晶动能炮晋升，允许[ICON_PROMOTION_CAN_MOVE_AFTER]攻击后移动，若遭受不超过自身2[ICON_PROMOTION_RANGE]射程的[ICON_RANGE_STRENGTH]远程攻击可对攻击者予以一次[COLOR_POSITIVE_TEXT]反击[ENDCOLOR]。[NEWLINE][ICON_BULLET]当受到来自[ICON_PROMOTION_NAVAL_HIT_AND_RUN][COLOR_POSITIVE_TEXT]游猎海军[ENDCOLOR]或[ICON_PROMOTION_SUBMARINE_COMBAT][COLOR_POSITIVE_TEXT]潜艇单位[ENDCOLOR]攻击时所受伤害[COLOR_POSITIVE_TEXT]减半[ENDCOLOR]。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE">
+			<Text>魔晶动能炮</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_HELP">
+			<Text>[ICON_PROMOTION_HUNTDOWN_1]攻击次数+1，攻击可对目标同格区域造成[COLOR_POSITIVE_TEXT]100%[ENDCOLOR]穿透伤害。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BLOOD_WING_RETROFIT">
+			<Text>涤故更新</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BLOOD_WING_RETROFIT_HELP">
+			<Text>当研发[COLOR_CYAN]工业化[ENDCOLOR]后，战斗力提高（280近战[ICON_STRENGTH]，280远程[ICON_RANGE_STRENGTH]），[ICON_PROMOTION_RANGE]射程+1（[COLOR_NEGATIVE_TEXT]升级不会继承[ENDCOLOR]）。</Text>
+		</Row>
+		
+
+		<!--Dialogue-->
+		<!--Greeting-->		
+		<Row Tag="TXT_KEY_LEADER_REMILIA_FIRSTGREETING_1">
+			<Text>我是蕾米莉亚·斯卡雷特--殷绯王庭的皇帝。来使，有什么国家事务要商量？</Text>
+		</Row>				
+		<Row Tag="TXT_KEY_LEADER_REMILIA_FIRSTGREETING_2">
+			<Text>来使，欢迎来到我的帝国。不妨来杯红茶，感受仲夏夜之梦的美妙。</Text>
+		</Row>
+
+		<!--Defeated and removed from game -->		
+		<Row Tag="TXT_KEY_LEADER_REMILIA_DEFEATED_1">
+			<Text>光注重操纵别人的命运了吗？我却忘了改变自己的命运······</Text>
+		</Row>				
+		<Row Tag="TXT_KEY_LEADER_REMILIA_DEFEATED_2">
+			<Text>恭喜你在这个轮回中战胜了命运，胜利属于你···当然只是暂时的···</Text>
+		</Row>	
+		
+		<!--Declare war-->		
+		<Row Tag="TXT_KEY_LEADER_REMILIA_DECLAREWAR_1">
+			<Text>这是我的家园，我权利的象征。风雨是我的盟友，树石是我的士卒。若是你想与我为敌，那么整片土地的万事万物将会起来对抗你，直至你痛苦的死去！</Text>
+		</Row>				
+		<Row Tag="TXT_KEY_LEADER_REMILIA_DECLAREWAR_2">
+			<Text>你不值得我同情，也提不起我的兴趣。</Text>
+		</Row>	
+
+		<!--Transport-->
+		<Row Tag='TXT_KEY_TITLE_REMILIA_SUPER_TRANSPORT'>
+			<Text>次元之爪</Text>
+		</Row>
+		<Row Tag='TXT_KEY_COND_REMILIA_SUPER_TRANSPORT'>
+			<Text>[NEWLINE][ICON_BULLET]传送至相邻4格范围内任意未被单位所占据的陆地非[ICON_PROMOTION_ALTITUDE_TRAINING]山脉地块，冷却时间：3回合。
+				[NEWLINE][ICON_BULLET][ICON_PIRATE]歼灭敌军可立即刷新传送冷却时间。</Text>
+		</Row>
+		<Row Tag='TXT_KEY_COND_REMILIA_SUPER_TRANSPORT_2'>
+			<Text>[COLOR_NEGATIVE_TEXT]此处传送伴随高风险，指令驳回！[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag='TXT_KEY_ALERT_REMILIA_SUPER_TRANSPORT'>
+			<Text>[COLOR_NEGATIVE_TEXT]{@1_name}[ENDCOLOR]已准备冲锋陷阵！</Text>
+		</Row>
+		
+		<!--文本信息-->
+		<Row Tag="TXT_KEY_SCARLET_COMBAT_PRODUCTION">
+			<Text>我军{1_UnitName}将敌军{2_EnUName}[COLOR_NEGATIVE_TEXT]血祭血神[ENDCOLOR]，{3_CityName:textkey}获得了[COLOR_CITY_BROWN]{4_Num}[ENDCOLOR][ICON_PRODUCTION]点产能累积。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_CHOOSE_IDEOLOGY_ATL">
+			<Text>禁忌秘文库已解封，现在可以获得那些曾经被视为禁忌的知识了（解锁意识形态）。</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME0">
+			<Text>[COLOR_NEGATIVE_TEXT]至高王血骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME1">
+			<Text>[COLOR_NEGATIVE_TEXT]猩红主宰骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME2">
+			<Text>[COLOR_NEGATIVE_TEXT]命运誓言骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME3">
+			<Text>[COLOR_NEGATIVE_TEXT]金血誓约骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME4">
+			<Text>[COLOR_NEGATIVE_TEXT]虹翼之冠骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME5">
+			<Text>[COLOR_NEGATIVE_TEXT]禁忌之环骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME6">
+			<Text>[COLOR_NEGATIVE_TEXT]绝念化身骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME7">
+			<Text>[COLOR_NEGATIVE_TEXT]绛血圣杯骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME8">
+			<Text>[COLOR_NEGATIVE_TEXT]丧钟使者骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME9">
+			<Text>[COLOR_NEGATIVE_TEXT]凋零霸主骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME10">
+			<Text>[COLOR_NEGATIVE_TEXT]赤红屠夫骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME11">
+			<Text>[COLOR_NEGATIVE_TEXT]血之门徒骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME12">
+			<Text>[COLOR_NEGATIVE_TEXT]绯色真理骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME13">
+			<Text>[COLOR_NEGATIVE_TEXT]天空灾祸骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME14">
+			<Text>[COLOR_NEGATIVE_TEXT]怜悯毁灭骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME15">
+			<Text>[COLOR_NEGATIVE_TEXT]无情赤血骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME16">
+			<Text>[COLOR_NEGATIVE_TEXT]断绝之爪骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME17">
+			<Text>[COLOR_NEGATIVE_TEXT]星辰战刃骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME18">
+			<Text>[COLOR_NEGATIVE_TEXT]净世灾星骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME19">
+			<Text>[COLOR_NEGATIVE_TEXT]毁灭铸文骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME20">
+			<Text>[COLOR_NEGATIVE_TEXT]希望圣龛骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME21">
+			<Text>[COLOR_NEGATIVE_TEXT]地狱先驱骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME22">
+			<Text>[COLOR_NEGATIVE_TEXT]典范之心骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME23">
+			<Text>[COLOR_NEGATIVE_TEXT]至尊翘楚骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME24">
+			<Text>[COLOR_NEGATIVE_TEXT]浩劫天火骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME25">
+			<Text>[COLOR_NEGATIVE_TEXT]泯灭圣剑骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME26">
+			<Text>[COLOR_NEGATIVE_TEXT]至胜殷红骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME27">
+			<Text>[COLOR_NEGATIVE_TEXT]咒世黑日骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME28">
+			<Text>[COLOR_NEGATIVE_TEXT]新星雄鹰骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME29">
+			<Text>[COLOR_NEGATIVE_TEXT]巨龙圣痕骑团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_NAME30">
+			<Text>[COLOR_NEGATIVE_TEXT]深渊圣堂骑团[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME0">
+			<Text>[COLOR_NEGATIVE_TEXT]至高红月号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME1">
+			<Text>[COLOR_NEGATIVE_TEXT]荣光血翼号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME2">
+			<Text>[COLOR_NEGATIVE_TEXT]红煌圣怒号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME3">
+			<Text>[COLOR_NEGATIVE_TEXT]世界焚灭号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME4">
+			<Text>[COLOR_NEGATIVE_TEXT]混沌王座号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME5">
+			<Text>[COLOR_NEGATIVE_TEXT]毁灭倒影号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME6">
+			<Text>[COLOR_NEGATIVE_TEXT]禁绝原罪号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME7">
+			<Text>[COLOR_NEGATIVE_TEXT]血色暴君号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME8">
+			<Text>[COLOR_NEGATIVE_TEXT]英武冠军号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME9">
+			<Text>[COLOR_NEGATIVE_TEXT]沧澜统御号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME10">
+			<Text>[COLOR_NEGATIVE_TEXT]深渊狂怒号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME11">
+			<Text>[COLOR_NEGATIVE_TEXT]劫难钟摆号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME12">
+			<Text>[COLOR_NEGATIVE_TEXT]正义之怒号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME13">
+			<Text>[COLOR_NEGATIVE_TEXT]永恒壁垒号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME14">
+			<Text>[COLOR_NEGATIVE_TEXT]君权神授号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME15">
+			<Text>[COLOR_NEGATIVE_TEXT]圣血之傲号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME16">
+			<Text>[COLOR_NEGATIVE_TEXT]命运终曲号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME17">
+			<Text>[COLOR_NEGATIVE_TEXT]不朽圣盾号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME18">
+			<Text>[COLOR_NEGATIVE_TEXT]黄昏之锋号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME19">
+			<Text>[COLOR_NEGATIVE_TEXT]末日战歌号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME20">
+			<Text>[COLOR_NEGATIVE_TEXT]红魔救主号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME21">
+			<Text>[COLOR_NEGATIVE_TEXT]无限远征号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME22">
+			<Text>[COLOR_NEGATIVE_TEXT]敌寇终末号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME23">
+			<Text>[COLOR_NEGATIVE_TEXT]以太之矛号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME24">
+			<Text>[COLOR_NEGATIVE_TEXT]征战荣胜号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME25">
+			<Text>[COLOR_NEGATIVE_TEXT]终焉挽歌号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME26">
+			<Text>[COLOR_NEGATIVE_TEXT]鲜血领主号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME27">
+			<Text>[COLOR_NEGATIVE_TEXT]绝对真理号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME28">
+			<Text>[COLOR_NEGATIVE_TEXT]唤潮风暴号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME29">
+			<Text>[COLOR_NEGATIVE_TEXT]七曜圣域号[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BLOOD_WING_SHIP_NAME30">
+			<Text>[COLOR_NEGATIVE_TEXT]厄运阴影号[ENDCOLOR]</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

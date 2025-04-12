@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<Religions>
+		<Row>
+			<Type>RELIGION_CHAOSGODS</Type>
+			<Description>TXT_KEY_RELIGION_CHAOSGODS</Description>
+			<Civilopedia>TXT_KEY_RELIGION_CHAOSGODS_PEDIA</Civilopedia>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>RELIGION_ATLAS_ALPHA_CHAOSGODS</IconAtlas>
+			<IconString>[ICON_RELIGION_CHAOSGODS]</IconString>
+		</Row>
+	</Religions>
+	<IconFontTextures>
+		<Row>
+			<IconFontTexture>ICON_FONT_TEXTURE_CHAOSGODS</IconFontTexture>
+			<IconFontTextureFile>CHAOSGODSFontIcons</IconFontTextureFile>
+		</Row>
+	</IconFontTextures>
+	<IconFontMapping>
+		<Row>
+			<IconName>ICON_RELIGION_CHAOSGODS</IconName>
+			<IconMapping>1</IconMapping>
+			<IconFontTexture>ICON_FONT_TEXTURE_CHAOSGODS</IconFontTexture>
+		</Row>
+	</IconFontMapping>
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>RELIGION_ATLAS_ALPHA_CHAOSGODS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>CHAOSGODS128.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>RELIGION_ATLAS_ALPHA_CHAOSGODS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>CHAOSGODS80.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>RELIGION_ATLAS_ALPHA_CHAOSGODS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>CHAOSGODS64.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>RELIGION_ATLAS_ALPHA_CHAOSGODS</Atlas>
+			<IconSize>48</IconSize>
+			<Filename>CHAOSGODS48.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>RELIGION_ATLAS_ALPHA_CHAOSGODS</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>CHAOSGODS32.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>RELIGION_ATLAS_ALPHA_CHAOSGODS</Atlas>
+			<IconSize>24</IconSize>
+			<Filename>CHAOSGODS24.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>RELIGION_ATLAS_ALPHA_CHAOSGODS</Atlas>
+			<IconSize>16</IconSize>
+			<Filename>CHAOSGODS16.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_RELIGION_CHAOSGODS">
+			<Text>混沌真神</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RELIGION_CHAOSGODS_PEDIA">
+			<Text>伊希尔也就是混沌国度，也被称作至高天或是亚空间。这个世界没有面积、没有高度也没有容积。唯一存在在这个世界的仅只有能量，能量就是那个世界的一切，现实宇宙的定律几乎不能套用在那个世界的准则中。[NEWLINE]伊希尔中的能量并不是停滞封闭在这个无边际的空间里，实体宇宙和能量界会互相干扰，伊希尔的能量来自实体宇宙，实体宇宙的神秘力量则根源自能量界，这种互动，自生物诞生就已经开始了。[NEWLINE]要讲解这个互动，首先要了解能量的规则，混沌国度的能量来自实体宇宙任何生物的欲望、情绪、信念、思想，只要头皮底下有一丁点儿的活动都会造成伊希尔世界产生波动，这种波动就是能量。[NEWLINE]当上千万人有了同样的精神波动就会在伊希尔造成无数相同性质的涟漪，此时混沌界的特殊能量规则---同性相吸也会开始进行，无数波动在互相影响汇聚下会形成威力强大的能量漩涡。[NEWLINE]能量漩涡与实体宇宙的生物会产生共鸣现象，如果这个世界的人用剧烈、同性质的能量作出呼应的话，此能量漩涡就会与实体宇宙连结，将神力灌输生灵身上，让凡人得到超越一般的神力，这种有如加持一般的现象导致多数不知道伊希尔能量运行原理的国度，狂热深信相信这是神赐的力量，他们只知道冥冥之中有股力量牵引、强化自己。</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

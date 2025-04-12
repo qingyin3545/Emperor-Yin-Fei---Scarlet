@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 2020/2/18 9:31:45 -->
+<GameData>
+	<Policies>
+		<Row>
+			<Type>POLICY_RED_NIGHT_CASTLE</Type>
+			<Description>TXT_KEY_POLICY_RED_NIGHT_CASTLE</Description>
+		</Row>
+		<Row>
+			<Type>POLICY_RED_MAGICIAN</Type>
+			<Description>TXT_KEY_POLICY_RED_MAGICIAN</Description>
+		</Row>
+	</Policies>
+	
+	<Policy_CapitalYieldChanges>
+		<Row>
+			<PolicyType>POLICY_RED_NIGHT_CASTLE</PolicyType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_RED_NIGHT_CASTLE</PolicyType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_RED_NIGHT_CASTLE</PolicyType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Policy_CapitalYieldChanges>
+	
+	<Policy_GoldenAgeGreatPersonRateModifier>
+		<Row>
+			<PolicyType>POLICY_RED_MAGICIAN</PolicyType>
+			<GreatPersonType>GREATPERSON_SCIENTIST</GreatPersonType>
+			<Modifier>33</Modifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_RED_MAGICIAN</PolicyType>
+			<GreatPersonType>SPECIALIST_ENGINEER</GreatPersonType>
+			<Modifier>33</Modifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_RED_MAGICIAN</PolicyType>
+			<GreatPersonType>GREATPERSON_WRITER</GreatPersonType>
+			<Modifier>33</Modifier>
+		</Row>
+	</Policy_GoldenAgeGreatPersonRateModifier>
+</GameData>

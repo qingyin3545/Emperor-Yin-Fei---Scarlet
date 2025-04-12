@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Diplomacy_Responses>
+	
+		<!--首次见面外交台词-->
+		<Row LeaderType="LEADER_REMILIA">
+			<ResponseType>RESPONSE_FIRST_GREETING</ResponseType>
+			<Response>TXT_KEY_LEADER_REMILIA_FIRSTGREETING_%</Response>
+			<Bias>2</Bias>
+		</Row>
+		
+		<Row LeaderType="LEADER_REMILIA">
+		<!--宣战外交台词-->
+			<ResponseType>RESPONSE_DELCLAREWAR</ResponseType>
+			<Response>TXT_KEY_LEADER_REMILIA_DECLAREWAR_%</Response>
+			<Bias>2</Bias>
+		</Row>
+		
+		<Row LeaderType="LEADER_REMILIA">
+		<!--战败外交台词-->
+			<ResponseType>RESPONSE_DEFEATED</ResponseType>
+			<Response>TXT_KEY_LEADER_REMILIA_DEFEATED_%</Response>
+			<Bias>2</Bias>
+		</Row>
+
+	</Diplomacy_Responses>
+</GameData>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Civilizations>
+	<!-- 文明定义 -->
+		<Row>
+			<Type>CIVILIZATION_SCARLET</Type>
+			<Description>TXT_KEY_CIV_SCARLET_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_SCARLET_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_SCARLET_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_SCARLET_TEXT_1</Civilopedia>
+			<CivilopediaTag>TXT_KEY_CIV5_SCARLET</CivilopediaTag>
+			<DefaultPlayerColor>PLAYERCOLOR_SCARLET</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_ENGLAND</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleSuffix>_EURO</ArtStyleSuffix>
+			<ArtStylePrefix>EUROPEAN </ArtStylePrefix>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>SCARLET_ATLAS</IconAtlas>
+			<AlphaIconAtlas>SCARLET_ALPHA</AlphaIconAtlas>
+			<MapImage>ScarletMap.dds</MapImage>
+			<DawnOfManQuote>TXT_KEY_CIV_SCARLET_DAWN_TEXT</DawnOfManQuote>
+			<DawnOfManImage>ScarletDOM.dds</DawnOfManImage>
+			<DawnOfManAudio>AS2D_DOM_SPEECH_SCARLET</DawnOfManAudio>
+			<SoundtrackTag>Russia</SoundtrackTag>
+		</Row>
+	</Civilizations>
+	
+	<Civilization_Leaders>
+	<!--文明对应领袖-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<LeaderheadType>LEADER_REMILIA</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	
+	<Civilization_Religions>
+	<!--领袖偏好宗教-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<ReligionType>RELIGION_CHAOSGODS</ReligionType>
+			<!--混沌真神-->
+		</Row>
+	</Civilization_Religions>
+	
+	<Civilization_FreeBuildingClasses>
+	<!--初始建筑-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<!--宫殿-->
+		</Row>
+	</Civilization_FreeBuildingClasses>
+	
+	<Civilization_FreeTechs>
+	<!--初始科技-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<TechType>TECH_FISHERY</TechType>
+			<!--渔业-->
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<TechType>TECH_AGRICULTURE</TechType>
+			<!--农业-->
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<TechType>TECH_HUNTING</TechType>
+			<!--狩猎-->
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<TechType>TECH_BRONZE_WORKING</TechType>
+			<!--冶铜术-->
+		</Row>
+	</Civilization_FreeTechs>
+	
+	<Civilization_FreeUnits>
+	<!--初始单位-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+			<!--移民-->
+			<Count>1</Count>
+			<UnitAIType>UNITAI_SETTLE</UnitAIType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<UnitClassType>UNITCLASS_WORKER</UnitClassType>
+			<!--工人-->
+			<Count>1</Count>
+			<UnitAIType>UNITAI_WORKER</UnitAIType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+			<!--斥候-->
+			<Count>1</Count>
+			<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+		</Row>
+	</Civilization_FreeUnits>
+	
+	<Civilization_Start_Along_Ocean>
+	<!--文明出生优先邻近海洋-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<StartAlongOcean>true</StartAlongOcean>
+		</Row>
+	</Civilization_Start_Along_Ocean>
+	
+	<Civilization_UnitClassOverrides>
+	<!--UU-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<UnitClassType>UNITCLASS_KNIGHT</UnitClassType>
+			<UnitType>UNIT_BLOOD_KNIGHTS</UnitType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+			<UnitType>UNIT_BLOOD_WING_SHIP</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	
+	<Civilization_BuildingClassOverrides>
+	<!--UBorUW-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<BuildingType>BUILDING_Red_Night_Castle</BuildingType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_NATIONAL_COLLEGE</BuildingClassType>
+			<BuildingType>BUILDING_RED_MAGICIAN</BuildingType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+			<BuildingType>BUILDING_Vampire_Mansion</BuildingType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<BuildingType>BUILDING_Blood_Fortress</BuildingType>
+		</Row>
+	</Civilization_BuildingClassOverrides>
+	
+	<!--地图颜色-->
+	<Colors>
+		<Row>
+			<Type>COLOR_SCARLET_LAND</Type>
+			<Red>0.65</Red>
+			<Green>0.15</Green>
+			<Blue>0</Blue>
+			<Alpha>1</Alpha>
+		</Row>
+		<Row>
+			<Type>COLOR_SCARLET_BORDER</Type>
+			<Red>0.1</Red>
+			<Green>0.1</Green>
+			<Blue>0.1</Blue>
+			<Alpha>1</Alpha>
+		</Row>
+	</Colors>
+
+	<PlayerColors>
+		<Row>
+			<Type>PLAYERCOLOR_SCARLET</Type>
+			<PrimaryColor>COLOR_SCARLET_BORDER</PrimaryColor>
+			<SecondaryColor>COLOR_SCARLET_LAND</SecondaryColor>
+			<TextColor>COLOR_PLAYER_WHITE_TEXT</TextColor>
+		</Row>
+	</PlayerColors>
+	
+	<Civilization_CityNames>
+	<!--文明城市的名字-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_SCARLET_MANSION</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_AMARANTH</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_GUNGNIR</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_CARNELIAN</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_VOILE</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_MISTY_LAKE</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_PIROS</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_SARKANS</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_LAVATEIN</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_ANTARES</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_CRANBERRY_ACRES</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_ALIZARIN</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_CARDINAL</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_NEW_BUCHAREST</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_CRIMSON</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_SANGUINE</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_BETELGEUZE</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_MAROON</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_VOROS</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_ARCTURUS</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_KERMES</CityName>
+		</Row>
+		<!--Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_CARMINE</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_CERISE</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_ALDEBARAN</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_SCARLET_SCHARLAKEN</CityName>
+		</Row-->
+	</Civilization_CityNames>
+	
+	<Civilization_SpyNames>
+	<!--间谍名-->
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_0</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_1</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_2</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_3</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_4</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_5</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_6</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_7</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_8</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_9</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_10</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_11</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_12</SpyName>
+		</Row>
+	</Civilization_SpyNames>
+	
+	<Language_en_US>
+	<!--城市名-->
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_SCARLET_MANSION">
+			<Text>帝都·斯卡雷尼亚</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_AMARANTH">
+			<Text>黑暗城堡·邓肯霍夫</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_GUNGNIR">
+			<Text>神殿城堡·塔兰霍夫</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_CARNELIAN">
+			<Text>圣血海门·洛亚卡拉德</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_VOILE">
+			<Text>绯冠海门·斯雷克拉德</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_MISTY_LAKE">
+			<Text>学识城堡·巴鲁瓦</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_PIROS">
+			<Text>双子城堡·弗兰德斯</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_SARKANS">
+			<Text>午夜城堡·克拉克瓦尔德</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_LAVATEIN">
+			<Text>红月城堡·德拉克费尔斯</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_ANTARES">
+			<Text>天罚要塞·冈格尼尔</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_CRANBERRY_ACRES">
+			<Text>禁忌要塞·莱万汀</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_ALIZARIN">
+			<Text>魔导要塞·艾利欧</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_CARDINAL">
+			<Text>永暗要塞·洛瑞亚</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_NEW_BUCHAREST">
+			<Text>血龙要塞·埃博拉什</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_CRIMSON">
+			<Text>恐惧要塞·墨洛温</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_SANGUINE">
+			<Text>血齿要塞·沃拉格</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_BETELGEUZE">
+			<Text>黄昏海门·斯瓦茨</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_MAROON">
+			<Text>征伐海垒·阿奎坦</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_VOROS">
+			<Text>守望海垒·奥博斯特恩</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_ARCTURUS">
+			<Text>血铸城堡·瓦尔登霍夫</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_KERMES">
+			<Text>诅咒要塞·维拉德</Text>
+		</Row>
+		<!--Row Tag="TXT_KEY_CITY_NAME_SCARLET_CARMINE">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_CERISE">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_ALDEBARAN">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_SCHARLAKEN">
+			<Text></Text>
+		</Row-->
+		
+	<!--间谍名-->
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_0">
+			<Text>莉亚卡德·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_1">
+			<Text>莉莉乌姆·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_2">
+			<Text>阿卡迪亚·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_3">
+			<Text>米加丽丝·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_4">
+			<Text>阿提米斯·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_5">
+			<Text>伊布莉丝·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_6">
+			<Text>露米利亚·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_7">
+			<Text>扎特拉切尼艾·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_8">
+			<Text>诺尔芙琳·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_9">
+			<Text>弗拉德·罗萨·德克雷亚</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_10">
+			<Text>洛尔·瓦妮娅·采佩西</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_11">
+			<Text>夜琳迦络·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_12">
+			<Text>雷德佐恩·麦基西安</Text>
+			<Gender>feminine</Gender>
+		</Row>
+	</Language_en_US>
+	
+</GameData>

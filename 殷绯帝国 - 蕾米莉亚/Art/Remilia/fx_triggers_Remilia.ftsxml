@@ -1,0 +1,291 @@
+<trigger_system type="FGrannyTimedTriggerSystem">
+	<event_tracks>
+		<event_track ec="1000">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1040">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1120">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1160">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1200">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1280">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1400">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1440">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1520">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1560">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1600">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1640">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1800">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="2000">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="2040">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="2200">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1290">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1020">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1100">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1140">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1220">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1420">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1500">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1540">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1580">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1620">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="2020">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="2100">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="2220">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1285">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1110">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1450">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="2440">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+		<event_track ec="1180">
+			<track id="1" name="Sound" />
+			<track id="2" name="Effect" />
+			<track id="3" name="Transfer" />
+			<track id="4" name="Action" />
+		</event_track>
+	</event_tracks>
+	<triggers>
+		<!-- ec="1000" IdleA  -->
+		<trigger type="FTimedTriggerSound" id="100" time="0.31415926" duration="0" repeat="0" ec="1000" track="1" event="AS3D_UNIT_REMILIA_IDLE" bone="" tier="0" />
+		<!-- ec="1020" IdleA_Trans_IdleB   -->
+		<trigger type="FTimedTriggerSound" id="101" time="0.31415926" duration="0" repeat="0" ec="1020" track="1" event="AS3D_UNIT_REMILIA_IDLE" bone="" tier="0" />
+		<!-- ec="1040" FidgetA -->
+		<trigger type="FTimedTriggerSound" id="102" time="0.31415926" duration="0" repeat="0" ec="1040" track="1" event="AS3D_UNIT_REMILIA_IDLE" bone="" tier="0" />
+
+		<!-- ec="1100" AttackA -->
+		<trigger type="FTimedTriggerSound" id="0" time="0.365675" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_REMILIA_ATTACK_VOX_A" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="1" time="0.346094" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_SWORD_SWING" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="3" time="0" duration="1" repeat="0" ec="1100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BATTLE_AMB_VOX_T2" bone="" tier="2" />
+		<trigger type="FTimedTriggerSound" id="4" time="0" duration="1" repeat="0" ec="1100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BATTLE_AMB_VOX_T1" bone="" tier="1" />
+		<trigger type="FTimedTriggerSound" id="5" time="0" duration="1" repeat="0" ec="1100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BAT_AMB_T2_$(WEAPON)" bone="" tier="2" />
+		<trigger type="FTimedTriggerSound" id="6" time="0" duration="1" repeat="0" ec="1100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BAT_AMB_T1_$(WEAPON)" bone="" tier="1" />
+	
+		<!-- ec="1120" Charge_Run -->
+		<trigger type="FTimedTriggerSound" id="9" time="0.2" duration="0" repeat="0" ec="1120" track="1" event="AS3D_UNIT_REMILIA_IDLE" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="8" time="0.642667" duration="0" repeat="0" ec="1120" track="1" event="AS3D_UNIT_REMILIA_FLYING" bone="" tier="0" />
+
+		<!-- ec="1140" Charge_Attack -->
+		<trigger type="FTimedTriggerSound" id="16" time="0.365675" duration="0" repeat="0" ec="1140" track="1" event="AS3D_UNIT_REMILIA_CHARGE_ATTACK" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="17" time="0.346094" duration="0" repeat="0" ec="1140" track="1" event="AS3D_UNIT_LONGSWORDSMAN_SWORD_SWING" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="18" time="0" duration="1" repeat="0" ec="1140" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BATTLE_AMB_VOX_T2" bone="" tier="2" />
+		<trigger type="FTimedTriggerSound" id="19" time="0" duration="1" repeat="0" ec="1140" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BATTLE_AMB_VOX_T1" bone="" tier="1" />
+		<trigger type="FTimedTriggerSound" id="20" time="0" duration="1" repeat="0" ec="1140" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BAT_AMB_T2_$(WEAPON)" bone="" tier="2" />
+		<trigger type="FTimedTriggerSound" id="21" time="0" duration="1" repeat="0" ec="1140" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BAT_AMB_T1_$(WEAPON)" bone="" tier="1" />
+
+
+		<!-- ec="1160" Attack_City -->
+		<trigger type="FTimedTriggerSound" id="25" time="0.468518525" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_WARRIOR_THROW_TORCH_T1" bone="" tier="1" />
+		<trigger type="FTimedTriggerSound" id="26" time="0.472222179" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_WARRIOR_SWORD_SWING_LOW" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="28" time="0.6185192" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_WARRIOR_THROW_TORCH" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="29" time="0.468518525" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_WARRIOR_THROW_TORCH_T2" bone="" tier="2" />
+		<trigger type="FTimedTriggerEffect" id="30" time="0.162963" duration="0.43" repeat="0" ec="1160" track="2" event="ART_DEF_VEFFECT_MELEE_TORCH_PROJECTILE" bone="weapon" tier="0" />
+		<trigger type="FTimedTriggerTransfer" id="31" time="0.5759264" duration="0" repeat="0" ec="1160" track="3" tier="0" refid="30" speed="36.9538" tangent.x="-0.140787959" tangent.y="-0.97747767" tangent.z="0.157213762" />
+		<trigger type="FTimedTriggerSound" id="24" time="0.6" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_REMILIA_CAST" bone="" tier="-1" />
+		<!-- <trigger type="FTimedTriggerEffect" id="24" time="0" duration="1" repeat="0" ec="1140" track="2" event="ART_DEF_VEFFECT_DUST_TRAIL_SM" bone="BIP Zehen L" /> -->
+
+		<!-- ec="1180" Bombardment -->
+		<trigger type="FTimedTriggerSound" id="32" time="0.6" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_REMILIA_CAST" bone="" tier="-1" />
+		<trigger type="FTimedTriggerSound" id="33" time="0.468518525" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_WARRIOR_THROW_TORCH_T1" bone="" tier="1" />
+		<trigger type="FTimedTriggerSound" id="34" time="0.472222179" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_WARRIOR_SWORD_SWING_LOW" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="35" time="0.6185192" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_WARRIOR_THROW_TORCH" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="36" time="0.468518525" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_WARRIOR_THROW_TORCH_T2" bone="" tier="2" />
+		<trigger type="FTimedTriggerEffect" id="37" time="0.162963" duration="0.43" repeat="0" ec="1180" track="2" event="ART_DEF_VEFFECT_MELEE_TORCH_PROJECTILE" bone="weapon" tier="0" />
+		<trigger type="FTimedTriggerTransfer" id="38" time="0.5759264" duration="0" repeat="0" ec="1180" track="3" tier="0" refid="37" speed="36.9538" tangent.x="-0.140787959" tangent.y="-0.97747767" tangent.z="0.157213762" />
+
+		<!-- ec="1200" Death_A -->
+		<trigger type="FTimedTriggerSound" id="39" time="0.029333" duration="0" repeat="0" ec="1200" track="1" event="AS3D_UNIT_REMILIA_DEATH" bone="" tier="-1" />
+
+		<!-- ec="1280" Bombard_Defense -->
+		<trigger type="FTimedTriggerSound" id="45" time="0.309259385" duration="0" repeat="0" ec="1280" track="1" event="AS3D_UNIT_REMILIA_FORTIFY" bone="" tier="-1" />
+
+		<!-- ec="1400" Run -->
+		<trigger type="FTimedTriggerSound" id="48" time="0.1" duration="0" repeat="0" ec="1400" track="1" event="AS3D_UNIT_REMILIA_FLYING" bone="" tier="0" />
+
+		<!-- ec="1500" Fortify -->
+		<trigger type="FTimedTriggerSound" id="60" time="0.000901713269" duration="0" repeat="0" ec="1500" track="1" event="AS3D_UNIT_LONGSWORDSMAN_FORTIFY" bone="" tier="0" />
+
+		<!-- ec="1600" Combat_Ready -->
+		<trigger type="FTimedTriggerSound" id="63" time="0.374074072" duration="0" repeat="0" ec="1600" track="1" event="AS3D_UNIT_LONGSWORDSMAN_FORTIFY" bone="" tier="-1" />
+
+		<!-- ec="1800" Victory -->
+		<trigger type="FTimedTriggerSound" id="67" time="0.575334132" duration="0" repeat="0" ec="1800" track="1" event="AS3D_UNIT_REMILIA_IDLE" bone="" tier="-1" />
+		<!-- ec="2000" IdleB  -->
+		<trigger type="FTimedTriggerSound" id="103" time="0.31415926" duration="0" repeat="0" ec="2000" track="1" event="AS3D_UNIT_REMILIA_IDLE" bone="" tier="0" />
+		<!-- ec="2020" IdleB_Trans_IdleA   -->
+		<trigger type="FTimedTriggerSound" id="104" time="0.31415926" duration="0" repeat="0" ec="2020" track="1" event="AS3D_UNIT_REMILIA_IDLE" bone="" tier="0" />
+		<!-- ec="2040" FidgetB -->
+		<trigger type="FTimedTriggerSound" id="105" time="0.31415926" duration="0" repeat="0" ec="2040" track="1" event="AS3D_UNIT_REMILIA_IDLE" bone="" tier="0" />
+		
+		<!-- ec="2100" AttackB -->
+		<trigger type="FTimedTriggerSound" id="69" time="0.365675" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_REMILIA_ATTACK_VOX_B" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="70" time="0.346094" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_SWORD_SWING" bone="" tier="0" />
+		<trigger type="FTimedTriggerSound" id="71" time="0" duration="1" repeat="0" ec="2100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BATTLE_AMB_VOX_T2" bone="" tier="2" />
+		<trigger type="FTimedTriggerSound" id="72" time="0" duration="1" repeat="0" ec="2100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BATTLE_AMB_VOX_T1" bone="" tier="1" />
+		<trigger type="FTimedTriggerSound" id="73" time="0" duration="1" repeat="0" ec="2100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BAT_AMB_T2_$(WEAPON)" bone="" tier="2" />
+		<trigger type="FTimedTriggerSound" id="74" time="0" duration="1" repeat="0" ec="2100" track="1" event="AS3D_UNIT_LONGSWORDSMAN_BAT_AMB_T1_$(WEAPON)" bone="" tier="1" />
+
+		<!-- ec="2200" Death_B -->
+		<trigger type="FTimedTriggerSound" id="78" time="0.616" duration="0" repeat="0" ec="2200" track="1" event="AS3D_UNIT_REMILIA_DEATH" bone="" tier="-1" />
+	</triggers>
+</trigger_system>
