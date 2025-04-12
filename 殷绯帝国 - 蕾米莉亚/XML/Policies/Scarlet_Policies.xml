@@ -38,7 +38,7 @@
 		</Row>
 		<Row>
 			<PolicyType>POLICY_RED_MAGICIAN</PolicyType>
-			<GreatPersonType>SPECIALIST_ENGINEER</GreatPersonType>
+			<GreatPersonType>GREATPERSON_ENGINEER</GreatPersonType>
 			<Modifier>33</Modifier>
 		</Row>
 		<Row>

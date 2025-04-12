@@ -260,7 +260,7 @@
 		</Row>
 	</Unit_Flavors>
 	
-	<Language_zh_CN>
+	<Language_en_US>
 		<Row Tag="TXT_KEY_UNIT_CRIMSONDRAKE">
 			<Text>[COLOR_YELLOW]赤龙圣团[ENDCOLOR]</Text>
 		</Row>
@@ -291,6 +291,6 @@
 				[NEWLINE]冷却时间：3回合。
 				[NEWLINE]（[ICON_PIRATE]歼灭敌军可立即刷新传送冷却时间）</Text>
 		</Row>
-	</Language_zh_CN>
+	</Language_en_US>
 	
 </GameData>

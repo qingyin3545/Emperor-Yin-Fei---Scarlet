@@ -14,18 +14,6 @@ SELECT 'Any', 'Constructed', 0.0018,  'ART_DEF_IMPROVEMENT_SCARLET_CASTLE', 'RAN
 SELECT 'Any', 'Constructed', 0.0018,  'ART_DEF_IMPROVEMENT_SCARLET_CASTLE', 'RANDOM', 'ART_DEF_RESOURCE_ALL', 'ClanCastle_03.fxsxml', 1 UNION ALL
 SELECT 'Any', 'Pillaged', 0.0018,  'ART_DEF_IMPROVEMENT_SCARLET_CASTLE', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'ClanCastle_pl.fxsxml', 1;
 --------------------------------------------------------------------------------------------------------------------
--- 世界强权额外资源兼容
---------------------------------------------------------------------------------------------------------------------
-CREATE TABLE IF NOT EXISTS ROG_GlobalUserSettings (Type text default null, Value integer default 0);
-INSERT INTO Improvement_ResourceTypes (ImprovementType, ResourceType)
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_RASPBERRYZ' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL-- 浆果
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_TEQUILA' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 龙舌兰酒
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_SULFUR' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 硫磺
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_SANPEDRO' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 圣佩德罗
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_TITANIUM' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 钛
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_SAFFRON' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 藏红花
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_TIN' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1); -- 硝石
---------------------------------------------------------------------------------------------------------------------
 -- 血盟古堡：相邻设施产出加成
 --------------------------------------------------------------------------------------------------------------------
 INSERT INTO Improvement_AdjacentImprovementYieldChanges(ImprovementType ,OtherImprovementType,YieldType, Yield)
