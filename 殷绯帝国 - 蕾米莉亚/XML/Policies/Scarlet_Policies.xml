@@ -5,10 +5,12 @@
 		<Row>
 			<Type>POLICY_RED_NIGHT_CASTLE</Type>
 			<Description>TXT_KEY_POLICY_RED_NIGHT_CASTLE</Description>
+			<Dummy>1</Dummy>
 		</Row>
 		<Row>
 			<Type>POLICY_RED_MAGICIAN</Type>
 			<Description>TXT_KEY_POLICY_RED_MAGICIAN</Description>
+			<Dummy>1</Dummy>
 		</Row>
 	</Policies>
 	

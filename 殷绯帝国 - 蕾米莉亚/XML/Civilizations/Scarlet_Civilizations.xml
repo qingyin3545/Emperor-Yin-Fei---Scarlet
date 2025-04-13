@@ -331,6 +331,18 @@
 			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
 			<SpyName>TXT_KEY_SPY_NAME_SCARLET_12</SpyName>
 		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_13</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_14</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_SCARLET_15</SpyName>
+		</Row>
 	</Civilization_SpyNames>
 
 	<PolicyBranch_CivilizationLocked>
@@ -343,7 +355,7 @@
 	<Language_en_US>
 	<!--城市名-->
 		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_SCARLET_MANSION">
-			<Text>帝都·斯卡雷尼亚</Text>
+			<Text>殷血帝都·斯卡雷尼亚</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITY_NAME_SCARLET_AMARANTH">
 			<Text>黑暗城堡·邓肯霍夫</Text>
@@ -469,6 +481,18 @@
 		</Row>
 		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_12">
 			<Text>雷德佐恩·麦基西安</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_13">
+			<Text>阿朵萝芙·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_14">
+			<Text>艾尔莉雅·斯卡雷特</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_SCARLET_15">
+			<Text>莉安迦娜·斯卡雷特</Text>
 			<Gender>feminine</Gender>
 		</Row>
 	</Language_en_US>

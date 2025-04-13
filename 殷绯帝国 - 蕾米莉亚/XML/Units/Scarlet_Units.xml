@@ -174,7 +174,7 @@
 			<!--军事生产-->
 			<Pillage>true</Pillage>
 			<!--允许劫掠-->
-			<GoodyHutUpgradeUnitClass>UNITCLASS_FUTURE_BATTLESHIP</GoodyHutUpgradeUnitClass>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_BATTLESHIP</GoodyHutUpgradeUnitClass>
 			<!--晋升单位战列舰-->
 			<Mechanized>true</Mechanized>
 			<!--机械化部队-->
@@ -383,7 +383,7 @@
 		<Row>
 			<UnitType>UNIT_BLOOD_WING_SHIP</UnitType>
 			<!--晋升前单位-->
-			<UnitClassType>UNITCLASS_FUTURE_BATTLESHIP</UnitClassType>
+			<UnitClassType>UNITCLASS_BATTLESHIP</UnitClassType>
 			<!--晋升后单位-->
 		</Row>
 	</Unit_ClassUpgrades>

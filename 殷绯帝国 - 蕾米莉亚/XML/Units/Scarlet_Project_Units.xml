@@ -55,7 +55,7 @@
 			<!--攻击获得经验-->
 			<XPValueDefense>6</XPValueDefense>
 			<!--防御获得经验-->
-			<UnitArtInfo>ART_DEF_UNIT_REMILIA</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_MATHALX_FIREDRAKES</UnitArtInfo>
 			<!--外观形象-->
 			<UnitFlagAtlas>CRIMSONDRAKES_ATLAS</UnitFlagAtlas>
 			<!--旗帜取材文件-->
@@ -231,8 +231,8 @@
 	<!--单位被选中时音效-->
 		<Row>
 			<UnitType>UNIT_CRIMSONDRAKE</UnitType>
-			<SelectionSound>AS2D_SELECT_REMILIA</SelectionSound>
-			<FirstSelectionSound>AS2D_BIRTH_REMILIA</FirstSelectionSound>
+			<SelectionSound>AS2D_SELECT_CRIMSONDRAKE</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_CRIMSONDRAKE</FirstSelectionSound>
 		</Row>
 	</UnitGameplay2DScripts>
 	
@@ -259,38 +259,5 @@
 			<Flavor>999</Flavor>
 		</Row>
 	</Unit_Flavors>
-	
-	<Language_en_US>
-		<Row Tag="TXT_KEY_UNIT_CRIMSONDRAKE">
-			<Text>[COLOR_YELLOW]赤龙圣团[ENDCOLOR]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_CRIMSONDRAKE_HELP">
-			<Text>[COLOR_YIELD_GOLD]殷绯禁军[ENDCOLOR]，拥有极佳的综合作战能力，能够使用传送袭击敌军后方阵地。需要颁布绯月圣典解锁，仅能组建一队。[NEWLINE]
-			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]内外皆钢[ENDCOLOR]：最大[ICON_HP]生命上限+100，[COLOR_POSITIVE_TEXT]免疫核攻击[ENDCOLOR]且抵消[COLOR_POSITIVE_TEXT]兵种克制[ENDCOLOR]加成。
-			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]利矛之锋[ENDCOLOR]：自带1~3级[ICON_PROMOTION_SHOCK_3]冲击，免疫登陆、渡河的[ICON_STRENGTH]战斗惩罚，[ICON_SGM_GROUP_OFF]移动无视敌方控制区域且不受地形影响。
-			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]永世狂热[ENDCOLOR]：每次战斗可永久提升3[ICON_STRENGTH]基础战斗力，当剩余[ICON_MOVES]移动力时可[COLOR_POSITIVE_TEXT]不限次数[ENDCOLOR]的发起[ICON_PROMOTION_HUNTDOWN_1]攻击。
-			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]无情围猎[ENDCOLOR]：可[ICON_PROMOTION_SENTRY]侦测[COLOR_POSITIVE_TEXT]隐身[ENDCOLOR]单位，解锁[COLOR_GREEN]次元之爪[ENDCOLOR]技能，允许传送至相邻4格范围内任意未被单位所占据的陆地非[ICON_PROMOTION_ALTITUDE_TRAINING]山脉地块。
-			[NEWLINE]冷却时间：3回合。
-			[NEWLINE]（[ICON_PIRATE]歼灭敌军可立即刷新传送冷却时间）</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_CRIMSONDRAKE_STRATEGY">
-			<Text>这些强大的动力装甲步兵堪比人形坦克，其作战经验足以弥补兵种克制影响。[NEWLINE][NEWLINE]空间传送可快速加入任何需要他们的战场。[NEWLINE][NEWLINE]这些百战老兵可适应任何地形战斗并且不受大部分负面状态干扰，只要情况允许，他们可对目标发起排山倒海一般的攻击。</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_CRIMSONDRAKE_PEDIA">
-			<Text>赤龙圣团是由猩红禁军元帅亲自选拔出来的那些最为好斗的战士，他们享受着那些能投入最危险环境的战斗。他们的杀手本能如剃刀般锋利，他们的愤怒也达到了顶点。然而，这些人并不是疯狂的暴怒者。许多最危险的近身战斗专家让愤怒驱使着他们，而赤龙圣团则完全按照他们的意愿控制他们的攻击性。他们的每一击都具有致命的力量，但也具有外科手术般的精准度。这些战士是如此的好斗和英勇，当形势需要的时候，他们会在初次打击之后将队伍完全分散，让每一位圣团成员单独行动在敌人的后方。作为孤独的斗士，赤龙圣团消灭关键目标，通过无法防备的部队散布了混乱和恐惧，并且在后续部队到达战线之前就完全打乱了敌人的阵型。</Text>
-		</Row>
-		
-		<Row Tag="TXT_KEY_PROMOTION_ETERNAL_WARDRAKE">
-			<Text>[COLOR_NEGATIVE_TEXT]万古长战[ENDCOLOR]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_ETERNAL_WARDRAKE_HELP">
-			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]内外皆钢[ENDCOLOR]：最大[ICON_HP]生命上限+100，[COLOR_POSITIVE_TEXT]免疫核攻击[ENDCOLOR]且抵消[COLOR_POSITIVE_TEXT]兵种克制[ENDCOLOR]加成。
-				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]利矛之锋[ENDCOLOR]：自带1~3级[ICON_PROMOTION_SHOCK_3]冲击，免疫登陆、渡河的[ICON_STRENGTH]战斗惩罚，[ICON_SGM_GROUP_OFF]移动无视敌方控制区域且不受地形影响。
-				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]永世狂热[ENDCOLOR]：每次战斗可永久提升3[ICON_STRENGTH]基础战斗力，当剩余[ICON_MOVES]移动力时可[COLOR_POSITIVE_TEXT]不限次数[ENDCOLOR]的发起[ICON_PROMOTION_HUNTDOWN_1]攻击。
-				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]无情围猎[ENDCOLOR]：可[ICON_PROMOTION_SENTRY]侦测[COLOR_POSITIVE_TEXT]隐身[ENDCOLOR]单位，解锁[COLOR_GREEN]次元之爪[ENDCOLOR]技能，允许传送至相邻4格范围内任意未被单位所占据的陆地非[ICON_PROMOTION_ALTITUDE_TRAINING]山脉地块。
-				[NEWLINE]冷却时间：3回合。
-				[NEWLINE]（[ICON_PIRATE]歼灭敌军可立即刷新传送冷却时间）</Text>
-		</Row>
-	</Language_en_US>
 	
 </GameData>

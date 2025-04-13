@@ -73,7 +73,7 @@
 		<!--UA/UAB/UAP: 红魔觉醒の日/真红の狂月-->
 		<Row Tag="TXT_KEY_TRAIT_SCARLET_ADVENT">
 			<Text>[ICON_BULLET]新建城市获得6块额外[ICON_SGM_GROUP_ACT_OFF]领土，全地形+1[ICON_PRODUCTION]产能；限定[COLOR_MAGENTA]传统政策[ENDCOLOR]，开启新[ICON_CULTURE]政策树可建造独有的[COLOR_POSITIVE_TEXT]专属[ENDCOLOR]奇观。[NEWLINE]
-			[ICON_BULLET][ICON_PROMOTION_CQB_COMBAT_1][COLOR_POSITIVE_TEXT]近战陆军[ENDCOLOR]获得[COLOR_POSITIVE_TEXT]独有[ENDCOLOR]晋升[COLOR_NEGATIVE_TEXT]寂庭血宴[ENDCOLOR]；[COLOR_POSITIVE_TEXT]作战单位[ENDCOLOR]+15[ICON_WAR]初始经验，并在[ICON_PIRATE]歼灭敌军时为最近的[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]提供等同对方[ICON_STRENGTH]战斗力的[ICON_PRODUCTION]产能。</Text>
+			[ICON_BULLET][ICON_PROMOTION_CQB_COMBAT_1][COLOR_POSITIVE_TEXT]近战陆军[ENDCOLOR]获得[COLOR_POSITIVE_TEXT]独有[ENDCOLOR]晋升[COLOR_NEGATIVE_TEXT]寂庭血宴[ENDCOLOR]；[COLOR_POSITIVE_TEXT]作战单位[ENDCOLOR]+15[ICON_WAR]初始经验，并在[ICON_PIRATE]歼灭敌军时为最近的[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]提供对方[ICON_STRENGTH]战斗力2倍的[ICON_PRODUCTION]产能。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_TRAIT_SCARLET_ADVENT_SHORT">
 			<Text>[COLOR_NEGATIVE_TEXT]红魔觉醒/真红狂月[ENDCOLOR]</Text>
@@ -82,7 +82,7 @@
 			<Text>[COLOR_NEGATIVE_TEXT]真红狂月[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CRIMSON_MOON_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]作战单位[ENDCOLOR]+15[ICON_WAR]初始经验，并在[ICON_PIRATE]歼灭敌军时为最近的[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]提供等同对方[ICON_STRENGTH]战斗力的[ICON_PRODUCTION]产能。</Text>
+			<Text>[COLOR_POSITIVE_TEXT]作战单位[ENDCOLOR]+15[ICON_WAR]初始经验，并在[ICON_PIRATE]歼灭敌军时为最近的[ICON_CITYBANNER_CITY_TOWN][COLOR_SELECTED_TEXT]城市[ENDCOLOR]提供对方[ICON_STRENGTH]战斗力2倍的[ICON_PRODUCTION]产能。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SCARLET_RAGE">
 			<Text>[COLOR_NEGATIVE_TEXT]寂庭血宴[ENDCOLOR]</Text>
@@ -169,8 +169,8 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARCANE_TABOO_LIBRARY_HELP">
 			<Text>[COLOR_POSITIVE_TEXT]禁忌秘文库[ENDCOLOR]是[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]的专属政策奇观，建造需开启[COLOR_MAGENTA]理性政策[ENDCOLOR]树。[NEWLINE]
-			[NEWLINE][ICON_BULLET]本城获得已研发科技数量[COLOR_CYAN]÷3[ENDCOLOR]的[ICON_RESEARCH]科研产出。
-			[NEWLINE][ICON_BULLET]每开启一条政策树，全国[COLOR_POSITIVE_TEXT]+5%[ENDCOLOR][ICON_GREAT_PEOPLE]伟人诞生速率。
+			[NEWLINE][ICON_BULLET]本城获得已研发科技数量[COLOR_CYAN]÷2[ENDCOLOR]的[ICON_RESEARCH]科研产出。
+			[NEWLINE][ICON_BULLET]每开启一条[COLOR_MAGENTA]政策树[ENDCOLOR]，全国[COLOR_POSITIVE_TEXT]+5%[ENDCOLOR][ICON_GREAT_PEOPLE]伟人诞生速率。
 			[NEWLINE][ICON_BULLET]提供三个[ICON_GREAT_WORK]文学杰作展位，奇观建成后将开启[ICON_IDEOLOGY_ORDER][ICON_IDEOLOGY_FREEDOM][ICON_IDEOLOGY_AUTOCRACY]意识形态。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDER_ARCANE_TABOO_LIBRARY_QUOTE">
@@ -202,7 +202,7 @@
 			[NEWLINE][ICON_BULLET]每位[ICON_GREAT_SCIENTIST][COLOR_CYAN]科学家[ENDCOLOR]+1[ICON_PRODUCTION]产能、[ICON_CULTURE]文化。
 			[NEWLINE][ICON_BULLET]每位[ICON_GREAT_ENGINEER][COLOR_YIELD_FOOD]工程师[ENDCOLOR]+1[ICON_RESEARCH]科研、[ICON_CULTURE]文化。
 			[NEWLINE][ICON_BULLET]每位[ICON_GREAT_WRITER][COLOR_MAGENTA]文学家[ENDCOLOR]+1[ICON_PRODUCTION]产能、[ICON_RESEARCH]科研。
-			[NEWLINE][ICON_BULLET]每当文明诞生任意一名[ICON_GREAT_SCIENTIST]大科学家/[ICON_GREAT_ENGINEER]大工程师/[ICON_GREAT_WRITER]大文学家时，本城为其他两种类型的伟人+30[ICON_GREAT_PEOPLE]诞生进度（标准速度下）。</Text>
+			[NEWLINE][ICON_BULLET]每当文明诞生任意一名[ICON_GREAT_SCIENTIST]大科学家/[ICON_GREAT_ENGINEER]大工程师/[ICON_GREAT_WRITER]大文学家时，本城为其他两种类型的伟人+50[ICON_GREAT_PEOPLE]诞生进度（标准速度下）。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RED_MAGICIAN_PEDIA">
 			<Text>许多遭受迫害的法师、技师、学者流离至凡佩尼亚大陆时，在斯卡雷特的庇护以及统合下组建了学识议会--绯赤魔导学会的前身。和毫无包容心的教廷不同，血族对于这群思想超前的博学家给予了高度的肯定，并进行了多次学术议题间的讨论。在斯卡雷特帝国建立后，部分精英被纳入绯赤魔导学会的核心，成为其国家魔导力量的中流砥柱。</Text>
@@ -257,7 +257,7 @@
 			[NEWLINE][ICON_BULLET]这些武艺非凡的战士渴望在战斗中获得荣耀，比起[COLOR_POSITIVE_TEXT]骑士[ENDCOLOR]而言组建成本更低（120[ICON_PRODUCTION]产能）
 			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]血堡战旗[ENDCOLOR]：[ICON_MOVES]移动力+1、[ICON_STRENGTH]远程防御力+25%，遭受[ICON_RANGE_STRENGTH]远程攻击时减少[COLOR_POSITIVE_TEXT]25%[ENDCOLOR]伤害。
 			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]猎猎扬旌[ENDCOLOR]：当研发[COLOR_CYAN]冶金学[ENDCOLOR]后，战斗力提高（55[ICON_STRENGTH]），[ICON_MOVES]移动力+1（[COLOR_NEGATIVE_TEXT]升级不会继承[ENDCOLOR]）。
-			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]嗜血铁骑[ENDCOLOR]：攻击可对目标造成自身[ICON_STRENGTH]战斗力÷10的[COLOR_POSITIVE_TEXT]额外伤害[ENDCOLOR]，并恢复等量[ICON_HP]生命。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]嗜血铁骑[ENDCOLOR]：攻击可对目标造成自身[ICON_STRENGTH]战斗力÷5的[COLOR_POSITIVE_TEXT]额外伤害[ENDCOLOR]，并恢复等量[ICON_HP]生命。
 			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]踏破万军[ENDCOLOR]：自带1级[ICON_PROMOTION_CHARGE_NEW_1]冲锋晋升，[ICON_STRENGTH]战斗力+25%，且[ICON_MOVES]移动不受地形影响。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BLOOD_KNIGHTS_TEXT">
@@ -335,7 +335,52 @@
 		<Row Tag="TXT_KEY_PROMOTION_BLOOD_WING_RETROFIT_HELP">
 			<Text>当研发[COLOR_CYAN]工业化[ENDCOLOR]后，战斗力提高（280近战[ICON_STRENGTH]，280远程[ICON_RANGE_STRENGTH]），[ICON_PROMOTION_RANGE]射程+1（[COLOR_NEGATIVE_TEXT]升级不会继承[ENDCOLOR]）。</Text>
 		</Row>
+		<!--EUP：绯月圣典-->
+		<Row Tag="TXT_KEY_PROJECT_REDMOON_INDEX">
+			<Text>绯月圣典</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_REDMOON_INDEX_HELP">
+			<Text>只有[COLOR_POSITIVE_TEXT]首个[ENDCOLOR]颁布此圣典的文明可以建造殷绯禁军：[COLOR_YIELD_GOLD]赤龙圣团[ENDCOLOR]。[NEWLINE]
+			[NEWLINE]当场上拥有[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]文明时，其他文明不可完成此精英项目。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_REDMOON_INDEX_PEDIA">
+			<Text>赤龙圣团是一群头发花白的百战老兵，他们身穿战术无畏盔甲作战。[NEWLINE]
+			战术无畏装甲，通常被称为圣团装甲，这是一种先进的动力装甲，专为近距离肉搏的百战老兵们所开发，对他们来说，强大的力量比机动性更为重要。这些强大的盔甲主要用于常规战甲不能为百战老兵提供足够保护的情况。[NEWLINE]
+			当战斗需要耐久力和防御而不是灵活性时，百战老兵们就会转向使用令人敬畏的圣团装甲。厚重的装甲板和强大的伺服肌肉驱动着这些圣团装甲，只有只有最优秀和最勇敢的斯卡雷特军人才能穿上这种古老而神圣的战斗装备。[NEWLINE]
+			圣团装甲的防御力十分惊人，外部装甲由厚重的重型复合陶钢制成，并安装在艾德曼合金外骨骼上。还带有伺服接口，可以使百战老兵的神经与盔甲链接，增强运动能力。[NEWLINE]
+			圣团装甲是如此强大，以至于优异的先进结构可以承受住足以穿透坦克的火力攻击。作为帝国兵工厂中最重型的动力盔甲，圣团装甲可以承受大量伤害。在进攻方面，圣团装甲完全可以作为一个重型火力平台在战场上大放光彩。</Text>
+		</Row>
+		<!--EU：赤龙圣团-->
+		<Row Tag="TXT_KEY_UNIT_CRIMSONDRAKE">
+			<Text>[COLOR_YELLOW]赤龙圣团[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CRIMSONDRAKE_HELP">
+			<Text>[COLOR_YIELD_GOLD]殷绯禁军[ENDCOLOR]，拥有极佳的综合作战能力，能够使用传送袭击敌军后方阵地。需要颁布绯月圣典解锁，仅能组建一队。[NEWLINE]
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]内外皆钢[ENDCOLOR]：最大[ICON_HP]生命上限+100，[COLOR_POSITIVE_TEXT]免疫核攻击[ENDCOLOR]且抵消[COLOR_POSITIVE_TEXT]兵种克制[ENDCOLOR]加成。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]利矛之锋[ENDCOLOR]：自带1~3级[ICON_PROMOTION_SHOCK_3]冲击，免疫登陆、渡河的[ICON_STRENGTH]战斗惩罚，[ICON_SGM_GROUP_OFF]移动无视敌方控制区域且不受地形影响。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]永世狂热[ENDCOLOR]：每次战斗可永久提升3[ICON_STRENGTH]基础战斗力，当剩余[ICON_MOVES]移动力时可[COLOR_POSITIVE_TEXT]不限次数[ENDCOLOR]的发起[ICON_PROMOTION_HUNTDOWN_1]攻击。
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]无情围猎[ENDCOLOR]：可[ICON_PROMOTION_SENTRY]侦测[COLOR_POSITIVE_TEXT]隐身[ENDCOLOR]单位，解锁[COLOR_GREEN]次元之爪[ENDCOLOR]技能，允许传送至相邻4格范围内任意未被单位所占据的陆地非[ICON_PROMOTION_ALTITUDE_TRAINING]山脉地块。
+			[NEWLINE]冷却时间：3回合。
+			[NEWLINE]（[ICON_PIRATE]歼灭敌军可立即刷新传送冷却时间）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CRIMSONDRAKE_STRATEGY">
+			<Text>这些强大的动力装甲步兵堪比人形坦克，其作战经验足以弥补兵种克制影响。[NEWLINE][NEWLINE]空间传送可快速加入任何需要他们的战场。[NEWLINE][NEWLINE]这些百战老兵可适应任何地形战斗并且不受大部分负面状态干扰，只要情况允许，他们可对目标发起排山倒海一般的攻击。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CRIMSONDRAKE_PEDIA">
+			<Text>赤龙圣团是由猩红禁军元帅亲自选拔出来的那些最为好斗的战士，他们享受着那些能投入最危险环境的战斗。他们的杀手本能如剃刀般锋利，他们的愤怒也达到了顶点。然而，这些人并不是疯狂的暴怒者。许多最危险的近身战斗专家让愤怒驱使着他们，而赤龙圣团则完全按照他们的意愿控制他们的攻击性。他们的每一击都具有致命的力量，但也具有外科手术般的精准度。这些战士是如此的好斗和英勇，当形势需要的时候，他们会在初次打击之后将队伍完全分散，让每一位圣团成员单独行动在敌人的后方。作为孤独的斗士，赤龙圣团消灭关键目标，通过无法防备的部队散布了混乱和恐惧，并且在后续部队到达战线之前就完全打乱了敌人的阵型。</Text>
+		</Row>
 		
+		<Row Tag="TXT_KEY_PROMOTION_ETERNAL_WARDRAKE">
+			<Text>[COLOR_NEGATIVE_TEXT]万古长战[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ETERNAL_WARDRAKE_HELP">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]内外皆钢[ENDCOLOR]：最大[ICON_HP]生命上限+100，[COLOR_POSITIVE_TEXT]免疫核攻击[ENDCOLOR]且抵消[COLOR_POSITIVE_TEXT]兵种克制[ENDCOLOR]加成。
+				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]利矛之锋[ENDCOLOR]：自带1~3级[ICON_PROMOTION_SHOCK_3]冲击，免疫登陆、渡河的[ICON_STRENGTH]战斗惩罚，[ICON_SGM_GROUP_OFF]移动无视敌方控制区域且不受地形影响。
+				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]永世狂热[ENDCOLOR]：每次战斗可永久提升3[ICON_STRENGTH]基础战斗力，当剩余[ICON_MOVES]移动力时可[COLOR_POSITIVE_TEXT]不限次数[ENDCOLOR]的发起[ICON_PROMOTION_HUNTDOWN_1]攻击。
+				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]无情围猎[ENDCOLOR]：可[ICON_PROMOTION_SENTRY]侦测[COLOR_POSITIVE_TEXT]隐身[ENDCOLOR]单位，解锁[COLOR_GREEN]次元之爪[ENDCOLOR]技能，允许传送至相邻4格范围内任意未被单位所占据的陆地非[ICON_PROMOTION_ALTITUDE_TRAINING]山脉地块。
+				[NEWLINE]冷却时间：3回合。
+				[NEWLINE]（[ICON_PIRATE]歼灭敌军可立即刷新传送冷却时间）</Text>
+		</Row>
 
 		<!--Dialogue-->
 		<!--Greeting-->		

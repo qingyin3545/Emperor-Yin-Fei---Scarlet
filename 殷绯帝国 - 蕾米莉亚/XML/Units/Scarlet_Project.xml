@@ -38,21 +38,4 @@
 		</Row>
 	</Project_Flavors>
 	
-	<Language_en_US>
-		<Row Tag="TXT_KEY_PROJECT_REDMOON_INDEX">
-			<Text>绯月圣典</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROJECT_REDMOON_INDEX_HELP">
-			<Text>只有[COLOR_POSITIVE_TEXT]首个[ENDCOLOR]颁布此圣典的文明可以建造殷绯禁军：[COLOR_YIELD_GOLD]赤龙圣团[ENDCOLOR]。[NEWLINE]
-			[NEWLINE]当场上拥有[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]文明时，其他文明不可完成此精英项目。</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROJECT_REDMOON_INDEX_PEDIA">
-			<Text>赤龙圣团是一群头发花白的百战老兵，他们身穿战术无畏盔甲作战。[NEWLINE]
-			战术无畏装甲，通常被称为圣团装甲，这是一种先进的动力装甲，专为近距离肉搏的百战老兵们所开发，对他们来说，强大的力量比机动性更为重要。这些强大的盔甲主要用于常规战甲不能为百战老兵提供足够保护的情况。[NEWLINE]
-			当战斗需要耐久力和防御而不是灵活性时，百战老兵们就会转向使用令人敬畏的圣团装甲。厚重的装甲板和强大的伺服肌肉驱动着这些圣团装甲，只有只有最优秀和最勇敢的斯卡雷特军人才能穿上这种古老而神圣的战斗装备。[NEWLINE]
-			圣团装甲的防御力十分惊人，外部装甲由厚重的重型复合陶钢制成，并安装在艾德曼合金外骨骼上。还带有伺服接口，可以使百战老兵的神经与盔甲链接，增强运动能力。[NEWLINE]
-			圣团装甲是如此强大，以至于优异的先进结构可以承受住足以穿透坦克的火力攻击。作为帝国兵工厂中最重型的动力盔甲，圣团装甲可以承受大量伤害。在进攻方面，圣团装甲完全可以作为一个重型火力平台在战场上大放光彩。</Text>
-		</Row>
-	</Language_en_US>
-	
 </GameData>

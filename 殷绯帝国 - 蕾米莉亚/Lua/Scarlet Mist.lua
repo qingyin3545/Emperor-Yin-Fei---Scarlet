@@ -185,12 +185,12 @@ function ScarletCombatEffect()
 	-- 血堡战旗
 	local ScarletBloodFlagID = GameInfo.UnitPromotions["PROMOTION_Flag_of_Blood_Keep"].ID
 
-	---------------------猩红骑团：攻击造成自身战斗力÷10的额外伤害，并恢复等量生命
+	---------------------猩红骑团：攻击造成自身战斗力÷5的额外伤害，并恢复等量生命
 	if not bIsCity then
 		if not attUnit:IsDead() and batType == GameInfoTypes["BATTLETYPE_MELEE"]
 		and attUnit:IsHasPromotion(ScarletBDWID) and not defUnit:IsDead() 
 		then
-			local extraDamage = math.ceil(attUnit:GetBaseCombatStrength() / 10)
+			local extraDamage = math.ceil(attUnit:GetBaseCombatStrength() / 5)
 			defUnit:ChangeDamage(extraDamage, attPlayerID)
 			attUnit:ChangeDamage(-extraDamage)
 			print("Ah, power of blood dragon warrior!")
@@ -311,7 +311,7 @@ function ScarletCombatEffect()
 	if not bIsCity and not attUnit:IsDead() and defUnit:IsDead() and
 	attPlayer:GetCivilizationType() == GameInfoTypes["CIVILIZATION_SCARLET"] then
 		local icCity = GetCloseCity(attPlayerID, defPlot) 
-		local idefCombat = GameInfo.Units[defUnit:GetUnitType()].Combat
+		local idefCombat = GameInfo.Units[defUnit:GetUnitType()].Combat * 2
 		local iText = Locale.ConvertTextKey("TXT_KEY_SCARLET_COMBAT_PRODUCTION", attUnit:GetName(), defUnit:GetName(), icCity:GetName(), idefCombat)
 		if icCity ~= nil then
 			icCity:SetOverflowProduction(icCity:GetOverflowProduction() + idefCombat)
@@ -401,7 +401,7 @@ function ScarletMist(iPlayer)
 				if pPlot:GetOwner() > -1 then
 					local pPlotOwner = Players[pPlot:GetOwner()]
 					if pPlotOwner == pPlayer and unit:IsCombatUnit() then
-						unit:ChangeExperience(2, -1, 0, 1, 1)
+						unit:ChangeExperience(2)
 					end
 				end
 			end
@@ -430,7 +430,7 @@ function ScarletPolicies(playerID)
 end
 GameEvents.PlayerDoTurn.Add(ScarletPolicies)
 ----------------------------------------------------------------------------------------------------------------------------
--- 绯赤魔导议会：诞生大科/大工/大文任意一种伟人时，给其他两种未诞生的伟人+30点数
+-- 绯赤魔导议会：诞生大科/大工/大文任意一种伟人时，给其他两种未诞生的伟人+50点数
 ----------------------------------------------------------------------------------------------------------------------------
 function WonderAccelerateGreatPeople(playerID, unitID)
 	local player = Players[playerID]
@@ -456,9 +456,8 @@ function WonderAccelerateGreatPeople(playerID, unitID)
 					if city:IsHasBuilding(GameInfoTypes.BUILDING_RED_MAGICIAN) then
 						print("is1:"..city:GetSpecialistGreatPersonProgress(is1))
 						print("is2:"..city:GetSpecialistGreatPersonProgress(is2))
-						city:ChangeSpecialistGreatPersonProgressTimes100(is1, math.ceil(3000 * iGreatPeople))
-						city:ChangeSpecialistGreatPersonProgressTimes100(is2, math.ceil(3000 * iGreatPeople))
-
+						city:ChangeSpecialistGreatPersonProgressTimes100(is1, math.ceil(5000 * iGreatPeople))
+						city:ChangeSpecialistGreatPersonProgressTimes100(is2, math.ceil(5000 * iGreatPeople))
 					end
 				end
 			end
@@ -498,11 +497,10 @@ function ScarletOpenTree(playerID, policyID)
 	
 	local pTradition = GameInfoTypes.POLICY_TRADITION --传统开门
 
-	if not pPlayer:HasPolicy(GameInfo.Policies["POLICY_RED_NIGHT_CASTLE"].ID)
-	and pPlayer:HasPolicy(pTradition)
-	and pPlayer:CountNumBuildings(GameInfoTypes["BUILDING_Red_Night_Castle"]) > 0 
-	then
+	if pPlayer:HasPolicy(pTradition) and pPlayer:CountNumBuildings(GameInfoTypes["BUILDING_Red_Night_Castle"]) > 0 then
 		pPlayer:SetHasPolicy(GameInfo.Policies["POLICY_RED_NIGHT_CASTLE"].ID, true, true)	
+	else
+		pPlayer:SetHasPolicy(GameInfo.Policies["POLICY_RED_NIGHT_CASTLE"].ID, false)
 	end
 
 end
@@ -784,7 +782,6 @@ local bIsCivActive	 = IsCivilisationActive(CivilizationID)
 
 function CityCanCreateOnly(playerID, cityID, projectTypeID)
 	local player = Players[playerID]
-	--local city = player:GetCityByID(cityID)
 	if (projectTypeID == GameInfo.Projects{Type="PROJECT_REDMOON_INDEX"}().ID) then
 		return player:GetCivilizationType() == CivilizationID 
 	end	
@@ -886,7 +883,7 @@ function ArcaneTabooLibraryBonus(iPlayer)
 	
 	for pCity in pPlayer:Cities() do
 		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARCANE_TABOO_LIBRARY) then
-			pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_TABOO_LIBRARY_BOUNS"], math.floor(iTechs/3))
+			pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_TABOO_LIBRARY_BOUNS"], math.floor(iTechs/2))
 		end
 	break
 	end
