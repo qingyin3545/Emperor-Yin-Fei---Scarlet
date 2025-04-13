@@ -332,6 +332,13 @@
 			<SpyName>TXT_KEY_SPY_NAME_SCARLET_12</SpyName>
 		</Row>
 	</Civilization_SpyNames>
+
+	<PolicyBranch_CivilizationLocked>
+		<Row>
+			<PolicyBranchType>POLICY_BRANCH_LIBERTY</PolicyBranchType>
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
+		</Row>
+	</PolicyBranch_CivilizationLocked>
 	
 	<Language_en_US>
 	<!--城市名-->

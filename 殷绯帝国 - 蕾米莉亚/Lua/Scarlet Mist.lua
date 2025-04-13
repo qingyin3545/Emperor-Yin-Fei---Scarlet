@@ -502,42 +502,11 @@ function ScarletOpenTree(playerID, policyID)
 	and pPlayer:HasPolicy(pTradition)
 	and pPlayer:CountNumBuildings(GameInfoTypes["BUILDING_Red_Night_Castle"]) > 0 
 	then
-		pPlayer:SetNumFreePolicies(1)
-		pPlayer:SetNumFreePolicies(0)
-		pPlayer:SetHasPolicy(GameInfo.Policies["POLICY_RED_NIGHT_CASTLE"].ID, true)	
+		pPlayer:SetHasPolicy(GameInfo.Policies["POLICY_RED_NIGHT_CASTLE"].ID, true, true)	
 	end
 
 end
 GameEvents.PlayerDoTurn.Add(ScarletOpenTree)
-----------------------------------------------------------------------------------------------------------------------------
--- 殷绯帝国：锁定传统道路
-----------------------------------------------------------------------------------------------------------------------------
-local PolocyGameSpeed = ((GameInfo.GameSpeeds[Game.GetGameSpeedType()].BuildPercent)/100)
-
-function noChooseLiberty( playerID, policybranchID )
-    local player = Players[playerID]	
-	local CurrentCulture = player:GetJONSCulture()
-
-    if player == nil then
-        return
-    end
-
-	if player:IsBarbarian() then
-    	return
-	end
-
-	if (player:GetCivilizationType() ~= GameInfoTypes["CIVILIZATION_SCARLET"])  then	
-		return
-	end
-
-	if (GameInfo.PolicyBranchTypes["POLICY_BRANCH_LIBERTY"].ID == policybranchID) then
-		player:SetHasPolicy(GameInfo.Policies["POLICY_LIBERTY"].ID, false)
-		player:SetPolicyBranchUnlocked(GameInfo.PolicyBranchTypes["POLICY_BRANCH_LIBERTY"].ID, false)
-		player:SetJONSCulture( CurrentCulture + math.ceil(40 * PolocyGameSpeed) )
-	end
-	
-end
-GameEvents.PlayerAdoptPolicyBranch.Add(noChooseLiberty)
 ----------------------------------------------------------------------------------------------------------------------------
 -- 猩红血骑：战斗力随科技提升
 ----------------------------------------------------------------------------------------------------------------------------
