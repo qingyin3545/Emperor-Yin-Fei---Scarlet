@@ -370,10 +370,6 @@ function ClanCastleExperience(playerID)
 	if player:IsAlive() then
 		for city in player:Cities() do
 			city:SetNumRealBuilding(GameInfoTypes["BUILDING_SCARLET_CASTLE_MANPOWER"], GetNumberWorkedClanCastles(playerID, city))
-			-- 健康度加成(需启用世界强权并建成血族宅邸)
-			if  isSPEx and city:GetNumBuilding(GameInfoTypes["BUILDING_Vampire_Mansion"]) > 0 then
-				city:SetNumRealBuilding(GameInfoTypes["BUILDING_SCARLET_HEALTH_BOUNS"], GetNumberWorkedClanCastles(playerID, city))
-			end
 		end
 	end
 end
@@ -849,20 +845,6 @@ function SetScarletUnitsName( iPlayer, iOldUnit,  iNewUnit)
 end
 GameEvents.UnitUpgraded.Add(SetScarletUnitsName)
 ----------------------------------------------------------------------------------------------------------------------------
--- 红魔觉醒：政策解锁专属奇观
-----------------------------------------------------------------------------------------------------------------------------
-function ScarletWonder(iPlayer, iCity, iBuilding)
-	if (iBuilding == GameInfoTypes.BUILDING_SCARLET_PALACE) or (iBuilding == GameInfoTypes.BUILDING_BLOOD_DRAGON_KEEP) or (iBuilding == GameInfoTypes.BUILDING_ARCANE_TABOO_LIBRARY) then
-		local player = Players[iPlayer]
-		if player:GetCivilizationType() == ScarletCivilizationID then	
-			return true
-		end  
-		return false
-	end
-	return true
-end
-GameEvents.CityCanConstruct.Add(ScarletWonder)
-----------------------------------------------------------------------------------------------------------------------------
 -- 血龙礼拜堂：拥有鲜血要塞则陆军获得双倍初始经验值
 ----------------------------------------------------------------------------------------------------------------------------
 local DomainLandID = GameInfoTypes["DOMAIN_LAND"]
@@ -880,19 +862,6 @@ local function BloodDraonKeepCityTrained(playerID, cityID, unitID)
 	unit:ChangeExperience(numXP)
 end 
 GameEvents.CityTrained.Add(BloodDraonKeepCityTrained)
-----------------------------------------------------------------------------------------------------------------------------
--- 血契秘所：建造完成赋予人口（因不太合适暂注释）
-----------------------------------------------------------------------------------------------------------------------------
-local VampireMansionID = GameInfoTypes["BUILDING_Vampire_Mansion"]
-function VampireMansionBoost(playerID, cityID, buildingType)
-	local player = Players[playerID]
-	local city = player:GetCityByID(cityID)
-	if (not player:IsAlive()) then return end
-	if buildingType == VampireMansionID and (city:GetPopulation() < 6) then
-		city:ChangePopulation(1)
-	end
-end
---GameEvents.CityConstructed.Add(VampireMansionBoost)
 ----------------------------------------------------------------------------------------------------------------------------
 -- 歃血要塞：范围内的作战单位为城市加产能累积
 ----------------------------------------------------------------------------------------------------------------------------

@@ -496,13 +496,23 @@
 		</Row>
 	</Building_ResourceQuantityRequirements>
 	
-	<Building_ClassesNeededInCity>
-	<!--建筑前置条件-->
+	<!--红魔觉醒: 建筑前置条件-->
+	<Building_BuildingsNeededInCity>
 		<Row>
 			<BuildingType>BUILDING_SCARLET_PALACE</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<PreBuildingType>BUILDING_Red_Night_Castle</PreBuildingType>
 		</Row>
-	</Building_ClassesNeededInCity>
+	</Building_BuildingsNeededInCity>
+	<Building_BuildingsNeededGlobal>
+		<Row>
+			<BuildingType>BUILDING_BLOOD_DRAGON_KEEP</BuildingType>
+			<PreBuildingType>BUILDING_Red_Night_Castle</PreBuildingType>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ARCANE_TABOO_LIBRARY</BuildingType>
+			<PreBuildingType>BUILDING_Red_Night_Castle</PreBuildingType>
+		</Row>
+	</Building_BuildingsNeededGlobal>
 	
 	<GreatWorks>
 		<Row>
