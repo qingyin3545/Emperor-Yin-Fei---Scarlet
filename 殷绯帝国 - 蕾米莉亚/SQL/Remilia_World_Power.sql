@@ -1,65 +1,76 @@
+--------------------------------------------------------------------------------------------------------------------
+-- 世界强权兼容性更改
+--------------------------------------------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS ROG_GlobalUserSettings (Type text default null, Value integer default 0);
---------------------------------------------------------------------------------------------------------------------
--- 强权初始科技兼容
---------------------------------------------------------------------------------------------------------------------
-DELETE FROM Civilization_FreeTechs WHERE CivilizationType='CIVILIZATION_SCARLET' AND EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1); 
-INSERT INTO Civilization_FreeTechs(CivilizationType,TechType )
-SELECT 'CIVILIZATION_SCARLET',	    'TECH_FISHERY' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL
-SELECT 'CIVILIZATION_SCARLET',	    'TECH_AGRICULTURE' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL
-SELECT 'CIVILIZATION_SCARLET',	    'TECH_HUNTING' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL
-SELECT 'CIVILIZATION_SCARLET',	    'TECH_STONE_TOOLS' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1);
---------------------------------------------------------------------------------------------------------------------
--- 世界强权健康度
---------------------------------------------------------------------------------------------------------------------
-INSERT INTO Improvement_Yields (ImprovementType, YieldType, Yield) 
-SELECT	 'IMPROVEMENT_SCARLET_CASTLE', 'YIELD_HEALTH', 1 WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1);
+INSERT INTO ROG_GlobalUserSettings(Type, Value) SELECT 'MOD_REMILIA', 0;
 
-INSERT INTO Building_YieldModifiers (BuildingType, YieldType, Yield) 
-SELECT	 'BUILDING_Vampire_Mansion', 'YIELD_HEALTH', 1 WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1);
---------------------------------------------------------------------------------------------------------------------
--- 血盟古堡额外资源兼容
---------------------------------------------------------------------------------------------------------------------
-INSERT INTO Improvement_ResourceTypes (ImprovementType, ResourceType)
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_RASPBERRYZ' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL-- 浆果
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_TEQUILA' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 龙舌兰酒
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_SULFUR' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 硫磺
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_SANPEDRO' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 圣佩德罗
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_TITANIUM' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 钛
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_SAFFRON' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL -- 藏红花
-SELECT  'IMPROVEMENT_SCARLET_CASTLE',   'RESOURCE_TIN' WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1); -- 硝石
---------------------------------------------------------------------------------------------------------------------
--- 血龙礼拜堂：世界强权新军事建筑兼容
---------------------------------------------------------------------------------------------------------------------
-INSERT INTO Building_BuildingClassYieldChanges (BuildingType, BuildingClassType, YieldType, YieldChange) 
-SELECT	 'BUILDING_BLOOD_DRAGON_KEEP', 'BUILDINGCLASS_ZXZCC', 'YIELD_GOLD', 5 WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1) UNION ALL --重型造船厂
-SELECT	 'BUILDING_BLOOD_DRAGON_KEEP', 'BUILDINGCLASS_FW_BIOMOD_TANK', 'YIELD_GOLD', 25 WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1); --星际基地
---------------------------------------------------------------------------------------------------------------------
--- 赤龙圣团：世界强权万古长战晋升兼容
---------------------------------------------------------------------------------------------------------------------
-DELETE FROM UnitPromotions_UnitClasses WHERE UnitClassType='UNITCLASS_CRIMSONDRAKE' AND EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1);
-INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Modifier) 
-SELECT	 'PROMOTION_ANTI_TANK', 'UNITCLASS_CRIMSONDRAKE', -100 WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1)UNION ALL --兼容强权反装甲克制系数的降低
-SELECT	 'PROMOTION_AIR_ATTACK', 'UNITCLASS_CRIMSONDRAKE', -50 WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1); --兼容强权攻击机克制系数的降低
---------------------------------------------------------------------------------------------------------------------
--- 世界强权屏蔽兼容
---------------------------------------------------------------------------------------------------------------------
-INSERT INTO Civilization_BuildingClassOverrides (CivilizationType, BuildingClassType, BuildingType) 
-SELECT	 'CIVILIZATION_SCARLET', 'BUILDINGCLASS_WHITE_HOUSE', null WHERE EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type = 'WORLD_POWER_PATCH' AND Value = 1);
---------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------
--- 重型机甲晋升替换
---------------------------------------------------------------------------------------------------------------------
-UPDATE Unit_FreePromotions
-SET PromotionType = 'PROMOTION_HEAVY_ROBORT'
-WHERE PromotionType = 'PROMOTION_TANK_COMBAT' 
-AND UnitType = 'UNIT_CRIMSONDRAKE' 
-AND NOT EXISTS (SELECT * FROM UnitPromotions WHERE Type='PROMOTION_HEAVY_ROBORT');
--- 虽然强权已经有更好的判定了，但既然有效那还是继续留着
-CREATE TRIGGER SCARLET_PROMOTION
-AFTER INSERT ON UnitPromotions
-WHEN EXISTS (SELECT * FROM UnitPromotions WHERE Type='PROMOTION_HEAVY_ROBORT')
+--DROP TRIGGER CivRemilia1;
+--DROP TRIGGER CivRemilia2;
+CREATE TRIGGER CivRemilia1
+AFTER UPDATE ON ROG_GlobalUserSettings
+WHEN NEW.Type = 'MOD_REMILIA' AND NEW.Value= 1
 BEGIN
-	UPDATE Unit_FreePromotions
-	SET PromotionType = 'PROMOTION_HEAVY_ROBORT'
-	WHERE PromotionType = 'PROMOTION_TANK_COMBAT' AND UnitType = 'UNIT_CRIMSONDRAKE';
+	--------------------------------------------------------------------------------------------------------------------
+	-- 初始科技兼容
+	--------------------------------------------------------------------------------------------------------------------
+	DELETE FROM Civilization_FreeTechs WHERE CivilizationType='CIVILIZATION_SCARLET';
+	INSERT INTO Civilization_FreeTechs(CivilizationType, TechType)
+	SELECT 'CIVILIZATION_SCARLET', 'TECH_FISHERY' UNION ALL
+	SELECT 'CIVILIZATION_SCARLET', 'TECH_AGRICULTURE' UNION ALL
+	SELECT 'CIVILIZATION_SCARLET', 'TECH_HUNTING' UNION ALL
+	SELECT 'CIVILIZATION_SCARLET', 'TECH_STONE_TOOLS';
+
+	--------------------------------------------------------------------------------------------------------------------
+	-- 健康度
+	--------------------------------------------------------------------------------------------------------------------
+	INSERT INTO Improvement_Yields (ImprovementType, YieldType, Yield) 
+	SELECT 'IMPROVEMENT_SCARLET_CASTLE', 'YIELD_HEALTH', 1;
+
+	INSERT INTO Building_YieldModifiers (BuildingType, YieldType, Yield) 
+	SELECT 'BUILDING_Vampire_Mansion', 'YIELD_HEALTH', 1;
+
+	--------------------------------------------------------------------------------------------------------------------
+	-- 血盟古堡额外资源兼容（使用LIKE以保证未加载强权时数据库没有报错）
+	--------------------------------------------------------------------------------------------------------------------
+	INSERT INTO Improvement_ResourceTypes (ImprovementType, ResourceType)
+	SELECT  'IMPROVEMENT_SCARLET_CASTLE', t.Type FROM Resources t
+	WHERE t.Type LIKE 'RESOURCE_RASPBERRYZ' -- 浆果
+	OR	  t.Type LIKE 'RESOURCE_TEQUILA'	-- 龙舌兰酒
+	OR	  t.Type LIKE 'RESOURCE_SULFUR'		-- 硫磺
+	OR	  t.Type LIKE 'RESOURCE_SANPEDRO'	-- 圣佩德罗
+	OR	  t.Type LIKE 'RESOURCE_TITANIUM'	-- 钛
+	OR	  t.Type LIKE 'RESOURCE_SAFFRON'	-- 藏红花
+	OR	  t.Type LIKE 'RESOURCE_TIN';		-- 硝石
+
+	--------------------------------------------------------------------------------------------------------------------
+	-- 血龙礼拜堂：新军事建筑兼容
+	--------------------------------------------------------------------------------------------------------------------
+	INSERT INTO Building_BuildingClassYieldChanges (BuildingType, BuildingClassType, YieldType, YieldChange) 
+	SELECT 'BUILDING_BLOOD_DRAGON_KEEP', 'BUILDINGCLASS_ZXZCC', 'YIELD_GOLD', 5 UNION ALL --重型造船厂
+	SELECT 'BUILDING_BLOOD_DRAGON_KEEP', 'BUILDINGCLASS_BIOMOD_TANK', 'YIELD_GOLD', 25; --星际基地
+
+	--------------------------------------------------------------------------------------------------------------------
+	-- 白宫屏蔽
+	--------------------------------------------------------------------------------------------------------------------
+	INSERT INTO Civilization_BuildingClassOverrides (CivilizationType, BuildingClassType, BuildingType) 
+	SELECT 'CIVILIZATION_SCARLET', 'BUILDINGCLASS_WHITE_HOUSE', NULL;
+
+	--------------------------------------------------------------------------------------------------------------------
+	-- 赤龙圣团晋升替换重型机甲
+	--------------------------------------------------------------------------------------------------------------------
+	DELETE FROM Unit_FreePromotions WHERE PromotionType = 'PROMOTION_TANK_COMBAT' AND UnitType = 'UNIT_CRIMSONDRAKE';
+	INSERT INTO Unit_FreePromotions(UnitType, PromotionType)
+	SELECT 'UNIT_CRIMSONDRAKE', t.Type FROM UnitPromotions t WHERE t.Type LIKE 'PROMOTION_HEAVY_ROBORT';
+END;
+
+--开启兼容
+UPDATE ROG_GlobalUserSettings SET Value = 1 
+WHERE Type = 'MOD_REMILIA' AND EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type= 'WORLD_POWER_PATCH' AND Value = 1);
+
+CREATE TRIGGER CivRemilia2
+AFTER UPDATE ON ROG_GlobalUserSettings
+WHEN NEW.Type = 'WORLD_POWER_PATCH' AND NEW.Value= 1
+BEGIN
+    UPDATE ROG_GlobalUserSettings SET Value = 1 
+    WHERE Type = 'MOD_REMILIA' AND EXISTS (SELECT * FROM ROG_GlobalUserSettings WHERE Type= 'MOD_REMILIA' AND Value = 0);
 END;

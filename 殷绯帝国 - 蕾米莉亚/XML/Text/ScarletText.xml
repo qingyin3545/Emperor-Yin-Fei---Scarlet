@@ -267,7 +267,7 @@
 			<Text>[COLOR_NEGATIVE_TEXT]猩红骑团[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_Blood_dragon_warrior_HELP">
-			<Text>[NEWLINE][ICON_BULLET][ICON_STRENGTH]战斗力+25%，且[ICON_MOVES]移动不受地形影响。[NEWLINE][ICON_BULLET]攻击可对目标造成自身[ICON_STRENGTH]战斗力÷10的[COLOR_POSITIVE_TEXT]额外伤害[ENDCOLOR]，并恢复等量[ICON_HP]生命。</Text>
+			<Text>[NEWLINE][ICON_BULLET][ICON_STRENGTH]战斗力+25%，且[ICON_MOVES]移动不受地形影响。[NEWLINE][ICON_BULLET]攻击可对目标造成自身[ICON_STRENGTH]战斗力÷5的[COLOR_POSITIVE_TEXT]额外伤害[ENDCOLOR]，并恢复等量[ICON_HP]生命。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_BLOOD_KNIGHTS_RETROFIT">
 			<Text>猎猎扬旌</Text>

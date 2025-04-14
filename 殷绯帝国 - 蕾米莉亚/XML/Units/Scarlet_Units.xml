@@ -68,6 +68,7 @@
 			<!--移动类型四足-->
 			<ExtraMaintenanceCost>6</ExtraMaintenanceCost>
 			<!--单位维护费-->
+			<UnitTechUpgrade>true</UnitTechUpgrade>
 		</Row>
 		
 		<Row>
@@ -200,8 +201,50 @@
 			<!--移动类型船只-->
 			<ExtraMaintenanceCost>24</ExtraMaintenanceCost>
 			<!--单位维护费-->
+			<UnitTechUpgrade>true</UnitTechUpgrade>
 		</Row>
 	</Units>
+
+	<!--猩红血骑、荣光血翼主力舰科技强化-->
+	<Unit_TechCombatStrength>
+		<Row>
+			<UnitType>UNIT_BLOOD_KNIGHTS</UnitType>
+			<TechType>TECH_METALLURGY</TechType>
+			<CombatStrength>55</CombatStrength>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BLOOD_WING_SHIP</UnitType>
+			<TechType>TECH_INDUSTRIALIZATION</TechType>
+			<CombatStrength>280</CombatStrength>
+		</Row>
+	</Unit_TechCombatStrength>
+	<Unit_TechRangedCombatStrength>
+		<Row>
+			<UnitType>UNIT_BLOOD_WING_SHIP</UnitType>
+			<TechType>TECH_INDUSTRIALIZATION</TechType>
+			<RangedCombatStrength>280</RangedCombatStrength>
+		</Row>
+	</Unit_TechRangedCombatStrength>
+	<Technology_FreePromotions>
+		<Row>
+			<TechType>TECH_METALLURGY</TechType>
+			<PromotionType>PROMOTION_BLOOD_KNIGHTS_RETROFIT</PromotionType>
+		</Row>
+		<Row>
+			<TechType>TECH_INDUSTRIALIZATION</TechType>
+			<PromotionType>PROMOTION_BLOOD_WING_RETROFIT</PromotionType>
+		</Row>
+	</Technology_FreePromotions>
+	<UnitPromotions_UnitType>
+		<Row>
+			<PromotionType>PROMOTION_BLOOD_KNIGHTS_RETROFIT</PromotionType>
+			<UnitType>UNIT_BLOOD_KNIGHTS</UnitType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BLOOD_WING_RETROFIT</PromotionType>
+			<UnitType>UNIT_BLOOD_WING_SHIP</UnitType>
+		</Row>
+	</UnitPromotions_UnitType>
 	
 	<Unit_FreePromotions>
 	<!--单位初始晋升-->
@@ -506,6 +549,8 @@
 			<!--不清楚-->
 			<PediaEntry>TXT_KEY_PROMOTION_RED_DEATH_KNIGHTS_EFFECT</PediaEntry>
 			<!--不清楚-->
+			<RemoveAfterXTurns>1</RemoveAfterXTurns>
+			<AutoRemoveDoneTurn>true</AutoRemoveDoneTurn>
 		</Row>
 		
 		<Row>
@@ -663,12 +708,6 @@
 			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
 			<!--晋升装甲可继承-->
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_BLOOD_KNIGHTS_RETROFIT</PromotionType>
-			<!--猎猎扬旌-->
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-			<!--晋升骑兵可继承-->
-		</Row>
 		
 		<Row>
 			<PromotionType>PROMOTION_RED_DEATH_KNIGHTS</PromotionType>
@@ -692,12 +731,6 @@
 		<Row>
 			<PromotionType>PROMOTION_SCARLET_COLLATERAL_DAMAGE</PromotionType>
 			<!--魔晶动能炮-->
-			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
-			<!--晋升远程海军可继承-->
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_BLOOD_WING_RETROFIT</PromotionType>
-			<!--涤故更新-->
 			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
 			<!--晋升远程海军可继承-->
 		</Row>

@@ -23,6 +23,13 @@
 			<!--图标顺序-->
 		</Row>
 	</Projects>
+
+	<Project_PolicyNeeded>
+		<Row>
+			<ProjectType>PROJECT_REDMOON_INDEX</ProjectType>
+			<PolicyType>POLICY_RED_NIGHT_CASTLE</PolicyType>
+		</Row>
+	</Project_PolicyNeeded>
 	
 	<Project_Flavors>
 		<!--ai参考倾向-->
