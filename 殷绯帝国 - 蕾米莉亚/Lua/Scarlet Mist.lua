@@ -278,15 +278,13 @@ function ScarletCombatEffect()
 
 	---------------------万古长战：每次战斗可永久提升3基础战斗力
 	if attUnit and not attUnit:IsDead() and attUnit:IsHasPromotion(ScarletEWID) then
-		attUnit:SetBaseCombatStrength(attUnit:GetBaseCombatStrength() + 3)
+		attUnit:ChangeCombatStrengthChangeFromKilledUnits(3)
 		print ("Attack:+3!!")
-	elseif not bIsCity then
-		if not defUnit:IsDead() and defUnit:IsHasPromotion(ScarletEWID) then
-			defUnit:SetBaseCombatStrength(defUnit:GetBaseCombatStrength() + 3)
-			print ("Defense:+3!!")
-		end
 	end
-
+	if defUnit and not defUnit:IsDead() and defUnit:IsHasPromotion(ScarletEWID) then
+		defUnit:ChangeCombatStrengthChangeFromKilledUnits(3)
+		print ("Defense:+3!!")
+	end
 	---------------------万古长战：杀敌后传送冷却立刻结束
 	if defUnit and defUnit:IsDead() and attUnit:IsHasPromotion(ScarletEWID) then
 		save( attPlayer, "ScarletTransport" .. attUnit:GetID(), -4)
