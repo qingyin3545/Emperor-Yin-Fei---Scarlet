@@ -140,7 +140,7 @@
 			<!--购买金钱系数，-1为不可购买-->
 			<NeverCapture>true</NeverCapture>
 			<!--无法占领-->
-			<PolicyCostModifier>-5</PolicyCostModifier>
+			<CorruptionPolicyCostModifier>-5</CorruptionPolicyCostModifier>
 			<!--政策阈值减少-->
 			<IconAtlas>SCARLET_PALACE_ATLAS</IconAtlas>
 			<!--图标取材-->

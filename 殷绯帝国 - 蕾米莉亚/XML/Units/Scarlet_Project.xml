@@ -21,6 +21,7 @@
 			<!--图标-->
 			<PortraitIndex>29</PortraitIndex>
 			<!--图标顺序-->
+			<CivilizationType>CIVILIZATION_SCARLET</CivilizationType>
 		</Row>
 	</Projects>
 

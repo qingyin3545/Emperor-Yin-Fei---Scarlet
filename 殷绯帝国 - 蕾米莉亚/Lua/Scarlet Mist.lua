@@ -623,24 +623,24 @@ function BloodFortressDoneTurn(playerID)
 	for city in player:Cities() do
 		if city:IsHasBuilding(BloodFortressID) then
 			local cityPlot = city:Plot();
+			local num_plot_units = 0
 			for plot in PlotAreaSpiralIterator(cityPlot, 3, SECTOR_NORTH, DIRECTION_CLOCKWISE) do
 				if plot and plot:GetNumUnits() > 0 then
-					local num_plot_units = 0
 					for i = 0, plot:GetNumUnits() - 1, 1 do
 						local fUnit = plot:GetUnit(i)
 						if fUnit:IsCombatUnit() then
 							num_plot_units = num_plot_units + 1
 						end
 					end
-					if num_plot_units > 0 then
-						local unitProduction = math.ceil(num_plot_units * 1 * (NowEra + 1 ) * ProductionGameSpeed)
-						city:SetOverflowProduction(city:GetOverflowProduction() + unitProduction);
-						if bPlayerHuman then
-							local hex = ToHexFromGrid(Vector2(plot:GetX(), plot:GetY()));
-							Events.AddPopupTextEvent(HexToWorld(hex), Locale.ConvertTextKey("[COLOR_CITY_BROWN]+{1_Num}[ENDCOLOR][ICON_PRODUCTION]", unitProduction ));
-							Events.GameplayFX(hex.x, hex.y, -1);
-						end
-					end
+				end
+			end
+			if num_plot_units > 0 then
+				local unitProduction = math.ceil(num_plot_units * 1 * (NowEra + 1 ) * ProductionGameSpeed)
+				city:SetOverflowProduction(city:GetOverflowProduction() + unitProduction);
+				if bPlayerHuman then
+					local hex = ToHexFromGrid(Vector2(city:GetX(), city:GetY()));
+					Events.AddPopupTextEvent(HexToWorld(hex), Locale.ConvertTextKey("[COLOR_CITY_BROWN]+{1_Num}[ENDCOLOR][ICON_PRODUCTION]", unitProduction));
+					Events.GameplayFX(hex.x, hex.y, -1);
 				end
 			end
 		end
@@ -706,34 +706,38 @@ GameEvents.CityConstructed.Add(ArcaneTabooLibraryAddNotification)
 ----------------------------------------------------------------------------------------------------------------------------
 -- 殷月红魔殿：市政厅减少阈值惩罚傀儡城提供人力
 ----------------------------------------------------------------------------------------------------------------------------
+local iScarletPalace = GameInfoTypes["BUILDING_SCARLET_PALACE"]
+local iScarletPalaceCulture = GameInfoTypes["BUILDING_SCARLET_PALACE_CULTURE"]
+local iScarletPalaceManpower = GameInfoTypes["BUILDING_SCARLET_PALACE_MANPOWER"]
+local iCorruptionLv0 = GameInfoTypes["CORRUPTION_LV0"]
+local iCorruptionPuppet = GameInfoTypes["CORRUPTION_PUPPET"]
 function ScarletPalaceBonus(playerID)
 	local player = Players[playerID]
-	
 	if player == nil or player:IsBarbarian() or player:IsMinorCiv() or player:GetNumCities() <= 0 then
 		return
 	end
 	
-	if player:CountNumBuildings(GameInfoTypes["BUILDING_SCARLET_PALACE"]) > 0 then
+	if player:CountNumBuildings(iScarletPalace) == 1 then
+		local pPalaceCity = nil
+		local iNumCityHall = 0
+		local iNumPuppet = 0
 		for city in player:Cities() do
-			if city:IsHasBuilding(GameInfoTypes["BUILDING_CITY_HALL_LV1"]) 
-			or city:IsHasBuilding(GameInfoTypes["BUILDING_CITY_HALL_LV2"])
-			or city:IsHasBuilding(GameInfoTypes["BUILDING_CITY_HALL_LV3"])
-			or city:IsHasBuilding(GameInfoTypes["BUILDING_CITY_HALL_LV4"])
-			or city:IsHasBuilding(GameInfoTypes["BUILDING_CITY_HALL_LV5"])
-			then
-				city:SetNumRealBuilding(GameInfoTypes["BUILDING_SCARLET_PALACE_CULTURE"],1)
-			else
-				city:SetNumRealBuilding(GameInfoTypes["BUILDING_SCARLET_PALACE_CULTURE"],0)
+			if city:GetCorruptionLevel() > iCorruptionLv0 then
+				iNumCityHall = iNumCityHall + 1
+			elseif city:GetCorruptionLevel() == iCorruptionPuppet then
+				iNumPuppet = iNumPuppet + 1
 			end
-			
-			if city:IsHasBuilding(GameInfoTypes["BUILDING_PUPPET_GOVERNEMENT"]) then
-				city:SetNumRealBuilding(GameInfoTypes["BUILDING_SCARLET_PALACE_MANPOWER"],1)
-			else
-				city:SetNumRealBuilding(GameInfoTypes["BUILDING_SCARLET_PALACE_MANPOWER"],0)
+
+			if city:IsHasBuilding(iScarletPalace) then
+				pPalaceCity = city
 			end
 		end
+
+		if pPalaceCity then
+			pPalaceCity:SetNumRealBuilding(iScarletPalaceCulture, iNumCityHall)
+			pPalaceCity:SetNumRealBuilding(iScarletPalaceManpower, iNumPuppet)
+		end
 	end
-	
 end
 GameEvents.PlayerDoTurn.Add(ScarletPalaceBonus)
 ----------------------------------------------------------------------------------------------------------------------------

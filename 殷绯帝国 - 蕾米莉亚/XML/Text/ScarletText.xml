@@ -340,8 +340,10 @@
 			<Text>绯月圣典</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROJECT_REDMOON_INDEX_HELP">
-			<Text>只有[COLOR_POSITIVE_TEXT]首个[ENDCOLOR]颁布此圣典的文明可以建造殷绯禁军：[COLOR_YIELD_GOLD]赤龙圣团[ENDCOLOR]。[NEWLINE]
-			[NEWLINE]当场上拥有[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]文明时，其他文明不可完成此精英项目。</Text>
+			<Text>
+				只有[COLOR_POSITIVE_TEXT]首个[ENDCOLOR]颁布此圣典的文明可以建造殷绯禁军：[COLOR_YIELD_GOLD]赤龙圣团[ENDCOLOR]。
+				[NEWLINE][NEWLINE]仅限[COLOR_NEGATIVE_TEXT]殷绯帝国[ENDCOLOR]可完成此精英项目。
+		</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROJECT_REDMOON_INDEX_PEDIA">
 			<Text>赤龙圣团是一群头发花白的百战老兵，他们身穿战术无畏盔甲作战。[NEWLINE]
